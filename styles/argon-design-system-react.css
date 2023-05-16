@@ -17,13 +17,18 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-#nav-title {
+.nav-title {
 	font-family: Segoe UI, sans-serif;
 	text-transform: capitalize;
+	font-size: 1.5rem;
 }
 
 #skills {
 	padding-bottom: 0;
+}
+
+.section-soft-skills {
+	text-align: center;
 }
 
 #backToTop {
@@ -442,7 +447,7 @@ h1,
 
 h2,
 .h2 {
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
 
 h3,
@@ -651,7 +656,7 @@ pre code {
 
 @media (min-width: 1200px) {
 	.container {
-		max-width: 1300px;
+		max-width: 1200px;
 	}
 }
 
@@ -19503,6 +19508,10 @@ textarea[resize="horizontal"] {
 @media (max-width: 575.98px) {
 	.nav-pills .nav-item {
 		margin-bottom: 1rem;
+	}
+
+	.nav-item a:hover {
+		font-weight: 600;
 	}
 }
 

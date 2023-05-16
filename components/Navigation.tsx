@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { greetings, socialLinks } from '../portfolio';
+import React, { useState, useEffect, useRef } from 'react';
+import { greetings } from '../portfolio';
 import Headroom from 'headroom.js';
 import {
   UncontrolledCollapse,
@@ -16,16 +16,48 @@ import {
 import { Icon } from '@iconify/react';
 
 const Navigation = () => {
-  const [collapseClasses, setCollapseClasses] = useState('');
-  const onExiting = () => setCollapseClasses('collapsing-out');
-
-  const onExited = () => setCollapseClasses('');
+  const [collapseOpen, setCollapseOpen] = useState(false);
+  const collapseRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     let headroom = new Headroom(document.getElementById('navbar-main')!);
-    // initialise
     headroom.init();
-  });
+
+    return () => {
+      headroom.destroy();
+    };
+  }, []);
+
+
+  const toggleCollapse = () => {
+    setCollapseOpen(!collapseOpen);
+  };
+
+  const handleLinkClick = () => {
+    setCollapseOpen(false);
+  };
+
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (collapseRef.current && !collapseRef.current.contains(event.target as Node)) {
+        setCollapseOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, []);
+
+
+
+  const handleToggleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation();
+    toggleCollapse();
+  };
+
 
   return (
     <>
@@ -40,7 +72,7 @@ const Navigation = () => {
         >
           <Container>
             <NavbarBrand href="/" className="mr-lg-5">
-              <h2 className="text-white" id="nav-title">
+              <h2 className="text-white nav-title">
                 {greetings.name}
               </h2>
             </NavbarBrand>
@@ -48,25 +80,26 @@ const Navigation = () => {
               className="navbar-toggler"
               aria-label="navbar_toggle"
               id="navbar_global"
+              onClick={handleToggleClick}
             >
               <span className="navbar-toggler-icon" />
             </button>
             <UncontrolledCollapse
               toggler="#navbar_global"
               navbar
-              className={collapseClasses}
-              onExiting={onExiting}
-              onExited={onExited}
+              isOpen={collapseOpen}
+              innerRef={collapseRef}
+              onClick={handleToggleClick}
             >
               <div className="navbar-collapse-header">
                 <Row>
-                  <Col className="collapse-brand" xs="6">
-                    <h3 className="text-black" id="nav-title">
+                  <Col className="collapse-brand" xs="10">
+                    <h3 className="text-black nav-title">
                       {greetings.name}
                     </h3>
                   </Col>
-                  <Col className="collapse-close" xs="6">
-                    <button className="navbar-toggler" id="navbar_global">
+                  <Col className="collapse-close" xs="2">
+                    <button className="navbar-toggler" id="navbar_global" onClick={handleToggleClick}>
                       <span />
                       <span />
                     </button>
@@ -79,7 +112,8 @@ const Navigation = () => {
                     rel="noopener"
                     aria-label="Mes compétences"
                     className="nav-link-icon"
-                    href={"#skills"}
+                    href="#skills"
+                    onClick={handleLinkClick}
                   >
                     Compétences
                   </NavLink>
@@ -89,7 +123,8 @@ const Navigation = () => {
                     rel="noopener"
                     aria-label="Mes formations"
                     className="nav-link-icon"
-                    href={"#educations"}
+                    href="#educations"
+                    onClick={handleLinkClick}
                   >
                     Formations
                   </NavLink>
@@ -97,9 +132,11 @@ const Navigation = () => {
                 <NavItem>
                   <NavLink
                     rel="noopener"
+
                     aria-label="Mes expériences"
                     className="nav-link-icon"
-                    href={"#experiences"}
+                    href="#experiences"
+                    onClick={handleLinkClick}
                   >
                     Expériences
                   </NavLink>
@@ -109,7 +146,8 @@ const Navigation = () => {
                     rel="noopener"
                     aria-label="Commentaires"
                     className="nav-link-icon"
-                    href={"#feedback"}
+                    href="#feedback"
+                    onClick={handleLinkClick}
                   >
                     Commentaires
                   </NavLink>
@@ -119,7 +157,8 @@ const Navigation = () => {
                     rel="noopener"
                     aria-label="Mes projets"
                     className="nav-link-icon"
-                    href={"#projects"}
+                    href="#projects"
+                    onClick={handleLinkClick}
                   >
                     Projets
                   </NavLink>
@@ -129,8 +168,9 @@ const Navigation = () => {
                     rel="noopener"
                     aria-label="Contactez-moi"
                     className="nav-link-icon"
-                    href={"#contact-me"}
+                    href="#contact-me"
                     style={{ fontWeight: "bold" }}
+                    onClick={handleLinkClick}
                   >
                     Contactez-moi !
                   </NavLink>

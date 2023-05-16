@@ -10,7 +10,7 @@ const Proficiency = () => {
       <Container className="section section-lg">
         <Fade bottom duration={2000}>
           <Row>
-            <Col lg="6">
+            <Col lg="6" className="section-soft-skills">
               <h1 className="h1">Soft skills</h1>
               {SkillBars.map((skill) => {
                 return (

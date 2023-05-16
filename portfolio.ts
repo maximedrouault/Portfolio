@@ -122,8 +122,8 @@ export const skillsSection: SkillsSectionType = {
       softwareSkills: [
         // ? Check README To get icon details
         {
-          skillName: 'OVH',
-          fontAwesomeClassName: 'simple-icons:ovh',
+          skillName: 'Hébergement',
+          fontAwesomeClassName: 'solar:server-square-cloud-bold',
         },
         {
           skillName: 'Apache',
@@ -275,14 +275,14 @@ export const projects: ProjectType[] = [
     name: 'KASA',
     desc: "Réalisation complète en React d'un site de location d'hébergements à partir d'une maquette Figma.  HTML / CSS / REACT / REACT ROUTER / Responsive",
     github: 'https://github.com/maximedrouault/Kasa',
-    // link: 'https://maximedrouault.github.io/Kasa/',
+    link: 'https://maxime-drouault-kasa.vercel.app/',
     projectsImg: "img/kasa.jpg"
   },
   {
     name: 'Mon Vieux Grimoire',
     desc: "Réalisation complète d'une API Rest (CRUD) avec gestion d'authentification, calcul de note moyenne et compression des images via Sharp. Express JS / Node JS / MongoDB / Mongoose / API / BCRYPT / JWT / MULTER / SHARP",
     github: 'https://github.com/maximedrouault/Mon-Vieux-Grimoire',
-    // link: 'https://maximedrouault.github.io/Kasa/',
+    // link: '',
     projectsImg: "img/mon-vieux-grimoire.jpg"
   }
 ];
