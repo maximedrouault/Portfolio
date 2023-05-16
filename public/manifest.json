@@ -1,0 +1,21 @@
+{
+  "short_name": "Portfolio",
+  "name": "Portfolio de Maxime DROUAULT",
+  "description": "Je suis un développeur passioné pour changer le monde avec la technologie.",
+  "icons": [
+    {
+      "src": "./favicon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#11cdef",
+  "background_color": "#11cdef"
+}
