@@ -15,7 +15,7 @@ const Feedbacks = () => {
               </div>
             </div>
             <div className="pl-4">
-              <h4 className="display-3 text-info">Commentaires</h4>
+              <h4 className="display-3 text-info">Références</h4>
             </div>
           </div>
           <Row className="row-grid align-items-center">

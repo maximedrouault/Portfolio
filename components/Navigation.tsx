@@ -109,11 +109,11 @@ const Navigation = () => {
                 <NavItem>
                   <NavLink
                     rel="noopener"
-                    aria-label="Commentaires"
+                    aria-label="Références"
                     className="nav-link-icon"
                     href={"#feedback"}
                   >
-                    Commentaires
+                    Références
                   </NavLink>
                 </NavItem>
                 <NavItem>
