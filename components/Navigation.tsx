@@ -42,9 +42,9 @@ const Navigation = () => {
         >
           <Container>
             <NavbarBrand href="/" className="mr-lg-5">
-              <h2 className="text-white nav-title">
+              <h1 className="text-white nav-title">
                 {greetings.name}
-              </h2>
+              </h1>
             </NavbarBrand>
             <button
               className="navbar-toggler"

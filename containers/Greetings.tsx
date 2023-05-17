@@ -29,9 +29,9 @@ const Greetings = () => {
             <div className="col px-0">
               <Row className="align-items-center">
                 <Col lg="6">
-                  <h1 className="display-3 text-white">
+                  <h2 className="display-3 text-white">
                     {greetings.title + ' '}
-                  </h1>
+                  </h2>
                   <p className="lead text-white">{greetings.description}</p>
                   <SocialLinks />
                   {greetings.resumeLink && (
@@ -45,7 +45,7 @@ const Greetings = () => {
                         <span className="btn-inner--icon mr-1">
                           <i className="fa fa-file" />
                         </span>
-                        <span className="btn-inner--text">Voir mon C.V.</span>
+                        <span className="btn-inner--text" aria-label="Lien vers le fichier PDF externe de mon C.V.">Voir mon C.V.</span>
                       </Button>
                     </div>
                   )}

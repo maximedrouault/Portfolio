@@ -28,13 +28,13 @@ export const ContactUs = () => {
   const successAlert = {
     color: 'success',
     icon: 'ni ni-like-2',
-    message: ' Your message has been sent successfully!',
+    message: '  Votre message a été envoyé avec succès !'
   };
 
   const errorAlert = {
     color: 'danger',
     icon: 'ni ni-bell-55',
-    message: ' Oops! Something went wrong. Please try again later.',
+    message: "  Oops! Quelque chose s'est mal passé. Veuillez réessayer plus tard ou prendre contact directement à : MAXIMEDROUAULT@GMAIL.COM"
   };
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -106,6 +106,7 @@ export const ContactUs = () => {
                           placeholder="Votre nom"
                           type="text"
                           name="user_name"
+                          aria-label="Votre nom"
                         />
                       </InputGroup>
                     </FormGroup>
@@ -120,6 +121,7 @@ export const ContactUs = () => {
                           placeholder="Votre adresse E-Mail"
                           name="user_email"
                           type="email"
+                          aria-label="Votre adresse E-Mail"
                         />
                       </InputGroup>
                     </FormGroup>
@@ -131,6 +133,7 @@ export const ContactUs = () => {
                         placeholder="Votre message..."
                         rows="4"
                         type="textarea"
+                        aria-label="Votre message"
                       />
                     </FormGroup>
                     <div>

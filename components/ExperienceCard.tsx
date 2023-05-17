@@ -40,7 +40,7 @@ const ExperienceCard = ({
                 borderRadius: '50%',
               }}
               className="shadow mb-3"
-              alt={companyLogo}
+              alt={"Logo " + company}
             />
             <CardTitle tag="h4" className="mb-2">
               {company}
@@ -54,8 +54,8 @@ const ExperienceCard = ({
               <ul className="mt-3">
                 {descBullets
                   ? descBullets.map((desc) => {
-                      return <li key={desc}>{desc}</li>;
-                    })
+                    return <li key={desc}>{desc}</li>;
+                  })
                   : null}
               </ul>
             </CardText>

@@ -215,6 +215,10 @@ export const SkillBars: SkillBarsType[] = [
   {
     Stack: 'Rigoureux',
     // progressPercentage: '100'
+  },
+  {
+    Stack: 'Autonome',
+    // progressPercentage: '100'
   }
 ];
 
@@ -232,19 +236,43 @@ export const educationInfo: EducationType[] = [
 
     ],
   },
+  {
+    schoolName: 'Autodidacte en informatique',
+    subHeader: 'Formation continue sur divers sujets informatiques.',
+    duration: "De 1996 à aujourd'hui",
+    descBullets: [
+      "Technologies abordées : VPN, VLAN, QoS, DHCP, DNS, LACP, Wifi, LAN, WAN, POE, MPLS, Routeur, Firewall.",
+      "Hébergement, Nom de domaine, MX, DNS.",
+      "Téléphonie IP Centrex (VoIP), Trunk SIP, RTC",
+      "Compétences abordées : Administration réseaux et serveurs, maintenance informatique."
+    ],
+  }
 ];
 
 export const experience: ExperienceType[] = [
   {
     role: 'Développeur Web',
     company: 'OpenClassrooms',
-    companyLogo: '/img/icons/common/openclassrooms.jpg',
+    companyLogo: 'img/icons/common/openclassrooms.jpg',
     date: 'Décembre 2022 – Juin 2023',
     desc: "J'ai réalisé la complétion de 8 projets me permettant de maîtriser les technologies et compétences suivantes :",
     descBullets: [
       "HTML / CSS / JS / React / Git/GitHub / NodeJS / ExpressJS / MongoDB / API Rest.",
       "Gestion de projets / Agile / Cascade.",
       "Responsive Design / SEO / Accessibilité."
+    ]
+  },
+  {
+    role: 'Informaticien polyvalent',
+    company: 'Serveurcom / Amix / Fatech / Medion',
+    companyLogo: 'img/icons/common/experiences-logo.png',
+    date: 'Septembre 2001 – Octobre 2016',
+    desc: "Missions diverses :",
+    descBullets: [
+      "Serveurcom : Technicien Support N2 Réseaux et Télécoms, puis Responsable Support Technique.",
+      "Amix : Technicien et administrateur systèmes et réseaux. Technicien / Formateur sur logiciels de gestions et médicaux.",
+      "Fatech : Technicien et administrateur systèmes et réseaux. ",
+      "Medion : Technicien d'assistance informatique."
     ]
   }
 ];
