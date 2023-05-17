@@ -27,7 +27,7 @@ export const openSource = {
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  url: 'https://maxime-drouault.fr/',
+  url: 'https://maximedrouault.vercel.app/',
   linkedin: 'https://www.linkedin.com/in/maximedrouault/',
   github: 'https://github.com/maximedrouault',
   instagram: 'https://www.instagram.com/drouaultmaxime/',
@@ -310,7 +310,6 @@ export const projects: ProjectType[] = [
     name: 'Mon Vieux Grimoire',
     desc: "Réalisation complète d'une API Rest (CRUD) avec gestion d'authentification, calcul de note moyenne et compression des images via Sharp. Express JS / Node JS / MongoDB / Mongoose / API / BCRYPT / JWT / MULTER / SHARP",
     github: 'https://github.com/maximedrouault/Mon-Vieux-Grimoire',
-    // link: '',
     projectsImg: "img/mon-vieux-grimoire.jpg"
   }
 ];
@@ -353,7 +352,7 @@ export const seoData: SEODataType = {
     'Un développeur passionné pour changer le monde avec la technologie.',
   author: 'Maxime DROUAULT',
   image: 'https://avatars.githubusercontent.com/u/119673669?v=4',
-  url: 'https://maxime-drouault.fr',
+  url: 'https://maximedrouault.vercel.app/',
   keywords: [
     'Maxime',
     'Maxime DROUAULT',

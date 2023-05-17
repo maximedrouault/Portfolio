@@ -6,7 +6,6 @@ function SEO() {
   return (
     <Head>
       <title>{seoData.title}</title>
-      <html lang="fr"></html>
       <meta name="title" content={seoData.title} />
       <meta name="author" content={seoData.author} />
       <meta name="description" content={seoData.description} />
