@@ -247,55 +247,82 @@ export const SkillBars: SkillBarsType[] = [
 
 export const educationInfo: EducationType[] = [
   {
-    schoolName: 'OpenClassrooms',
-    subHeader: 'Diplômé "Développeur intégrateur web"',
-    duration: 'Décembre 2022 - Juin 2023',
-    desc: 'Complétion de 8 projets professionnalisants.',
-    grade: 'Niveau 5 / BAC+2',
+    schoolName: 'Expert en développement logiciel',
+    subHeader: 'Spécialité : Développeur Full-Stack Java et Angular',
+    duration: '2024-2025',
+    desc: 'Complétion de 13 projets professionnels.',
+    grade: 'Niveau : BAC+5 - Master',
     descBullets: [
-      "Technologies abordées : HTML / CSS / JS / React / Git/GitHub / Node.js / Express.js / MongoDB / API Rest / Responsive Design.",
-      "Compétences annexes abordées : Gestion de projets et méthodes Agile / Cascade.",
-      "Responsive Design / SEO / Accessibilité."
-
+      "Technologies avancées : Java, Spring, Angular, JWT, WebSocket, CI/CD, Docker, AWS (S3, EC2, IAM, etc.).",
+      "Qualité & tests : JUnit, Mockito, Jest, Cypress, intégration de Sonar et Quality Gate.",
+      "Compétences annexes : Architecture logicielle, sécurité applicative, TDD/DDD/BDD, optimisation de performance, documentation Swagger/OpenAPI.",
+      "Mise en pratique : Développement et déploiement d’applications robustes et sécurisées en environnement cloud-native."
+    ]
+  },{
+    schoolName: 'Développeur concepteur logiciel',
+    subHeader: 'Spécialité : Développeur dʼapplication Java',
+    duration: '2023-2024',
+    desc: 'Complétion de 9 projets professionnels.',
+    grade: 'Niveau : BAC+3/4 - Licence',
+    descBullets: [
+      "Technologies abordées : Java, Spring, Hibernate/JPA, MySQL, PostgreSQL, MongoDB.",
+      "Qualité & tests : JUnit, Mockito, WireMock, MockMVC, intégration continue avec GitHub Actions / GitLab CI.",
+      "Compétences annexes : UML, conception de modèles relationnels, gestion de concurrence et parallélisation, API REST, Microservices.",
+      "Mise en pratique : Réalisation d’applications métiers avec architecture MVC et bonnes pratiques de développement."
+    ]
+  },
+  {
+    schoolName: 'Développeur intégrateur web',
+    subHeader: 'Spécialité : Développeur Web et Web mobile',
+    duration: '2022-2023',
+    desc: 'Complétion de 8 projets professionnels.',
+    grade: 'Niveau : BAC+2',
+    descBullets: [
+      'Technologies abordées : HTML, CSS, JavaScript, React, Git/GitHub, Node.js, Express.js, MySQL, MongoDB, API REST.',
+      'Compétences annexes : Gestion de projets, méthodes Agile et Cascade.',
+      'Approches complémentaires : Responsive Design, SEO, Accessibilité.'
     ],
   },
   {
-    schoolName: 'Autodidacte en informatique',
+    schoolName: 'Autodidacte IT',
     subHeader: 'Formation continue sur divers sujets informatiques.',
     duration: "De 1996 à aujourd'hui",
     descBullets: [
-      "Technologies abordées : VPN, VLAN, QoS, DHCP, DNS, LACP, Wifi, LAN, WAN, POE, MPLS, Routeur, Firewall.",
-      "Hébergement, Nom de domaine, MX, DNS.",
-      "Téléphonie IP Centrex (VoIP), Trunk SIP, RTC",
-      "Compétences abordées : Administration réseaux et serveurs, maintenance informatique."
+      'Technologies abordées : VPN, VLAN, QoS, DHCP, DNS, LACP, Wifi, LAN, WAN, POE, MPLS, Routeur, Firewall.',
+      'Hébergement, Nom de domaine, MX, DNS.',
+      'Téléphonie IP Centrex (VoIP), Trunk SIP, RTC',
+      'Compétences abordées : Administration réseaux et serveurs, maintenance informatique.'
     ],
-  }
+  },
 ];
 
 export const experience: ExperienceType[] = [
   {
-    role: 'Développeur Web',
-    company: 'OpenClassrooms',
+    role: 'Développement web et logiciel',
+    company: '',
     companyLogo: 'img/icons/common/openclassrooms.jpg',
-    date: 'Décembre 2022 – Juin 2023',
-    desc: "J'ai réalisé la complétion de 8 projets me permettant de maîtriser les technologies et compétences suivantes :",
+    date: '2022 – 2025',
+    desc: "Réalisation de 30 projets professionnels me permettant de maîtriser les technologies et compétences suivantes :",
     descBullets: [
-      "HTML / CSS / JS / React / Git/GitHub / NodeJS / ExpressJS / MongoDB / API Rest.",
-      "Gestion de projets / Agile / Cascade.",
-      "Responsive Design / SEO / Accessibilité."
+      "Technologies : Java, Spring Boot, Hibernate/JPA, Angular, TypeScript, JavaScript, HTML/CSS, React, Node.js, Express.js, MySQL, PostgreSQL, MongoDB.",
+      "Outils & environnements : Git/GitHub, GitLab CI, GitHub Actions, Maven, Docker, IntelliJ, VSCode, Postman.",
+      "Concepts & pratiques : Microservices, API REST, WebSocket, sécurité (JWT), CI/CD, TDD, DDD, BDD, SOLID.",
+      "Qualité & tests : JUnit, Mockito, WireMock, MockMVC, Jest, Cypress, intégration de Sonar et Quality Gate.",
+      "Méthodologies & gestion de projet : Agile (Scrum/Kanban), UML, modélisation de bases de données, documentation Swagger/OpenAPI."
     ]
   },
   {
     role: 'Informaticien polyvalent',
-    company: 'Serveurcom / Amix / Fatech / Medion',
+    company: 'Serveurcom/Amix/Fatech/Medion/Carrefour',
     companyLogo: 'img/icons/common/experiences-logo.png',
-    date: 'Septembre 2001 – Octobre 2016',
+    date: '2000 – 2017',
     desc: "Missions diverses :",
     descBullets: [
-      "Serveurcom : Technicien Support N2 Réseaux et Télécoms, puis Responsable Support Technique.",
-      "Amix : Technicien et administrateur systèmes et réseaux. Technicien / Formateur sur logiciels de gestions et médicaux.",
-      "Fatech : Technicien et administrateur systèmes et réseaux. ",
-      "Medion : Technicien d'assistance informatique."
+      "Serveurcom : Responsable support technique revendeur (réseaux et télécoms N2/N3).",
+      "Amix : Administrateur systèmes, réseaux et télécoms / Intégrateur logiciels métiers (médicaux/gestion).",
+      "Fatech : Administrateur systèmes et réseaux.",
+      "Medion : Technicien service d’assistance informatique.",
+      "Carrefour : Technicien SAV matériels informatique."
     ]
   }
 ];
@@ -339,30 +366,39 @@ export const projects: ProjectType[] = [
 
 export const feedbacks: FeedbackType[] = [
   {
-    name: 'Mamadou OURY DIALLO - Évaluateur OC',
-    feedback:
-      "Points forts : Projet bien structuré. Code bien indenté. Utilisation des spécifications HTML/CSS. Le projet respecte le cahier de charge. Bonne présentation, bonnes réponses aux questions posées."
-  },
-  {
-    name: 'Éric ALLAIN - Évaluateur OC',
+    name: 'Éric ALLAIN - Évaluateur',
     feedback:
       "Points forts : Maxime a réalisé un excellent travail sur ce projet en créant un code très bien optimisé et commenté pour chacune des différentes fonctionnalités implémentées. Maxime a réalisé une très bonne présentation en s'appuyant pour l'introduction sur un PowerPoint, puis l'ensemble de l'explication des différentes fonctionnalités implémentées ont été réalisés à partir de Visual Studio Code. Félicitations pour cet excellent travail et bonne chance pour la suite de ta formation développeur web.",
   },
   {
-    name: 'Cédric TCHANA - Évaluateur OC',
+    name: 'Jean-Baptiste Schmidt - Évaluateur',
+    feedback:
+      `Points forts :
+      -Livrables complets, clairs, cohérents et professionnels.
+      -Excellente capacité de justification des choix fonctionnels et techniques.
+      -Respect des standards d’architecture, de sécurité et de conformité.
+      -Bonne anticipation des évolutions futures (microservices, internationalisation, RGPD).`,
+  },
+  {
+    name: 'Bassam BOULACHEB - Évaluateur',
+    feedback:
+      'Points forts : Maxime a réalisé un excellent travail, tant au niveau du livrable que de la soutenance. Il a parfaitement respecté les critères d’évaluation pour la création du plan de sauvegarde des données et du plan de test, et a démontré une solide compréhension des concepts de qualité et de sécurité des opérations.',
+  },
+  {
+    name: 'Christian FODOUP - Évaluateur',
+    feedback:
+      'Points forts : Bonne maîtrise de son travail. Explications claires. Bonne structuration des livrables.',
+  },
+  {
+    name: 'Cédric TCHANA - Évaluateur',
     feedback:
       "Points forts : Rapport très bien monté. Soucis particuliers apporté aux graphiques représentatifs. L'étudiant a effectué une bonne présentation basée sur ses livrables.",
   },
   {
-    name: 'Christian FODOUP - Évaluateur OC',
+    name: 'Danielle PRISCA - Évaluateur',
     feedback:
-      "Points forts : Bonne maîtrise de son travail. Explications claires. Bonne structuration des livrables.",
+      'Points forts : L’étudiant a bien su utiliser les props pour gérer ce qui change à chaque fois. Bonne organisation des composants dans différents fichiers. Code très bien indenté. Code très bien commenté.',
   },
-  {
-    name: 'Danielle PRISCA - Évaluateur OC',
-    feedback:
-      "Points forts : L’étudiant a bien su utiliser les props pour gérer ce qui change à chaque fois. Bonne organisation des composants dans différents fichiers. Code très bien indenté. Code très bien commenté.",
-  }
 ];
 
 // option to hide or show the ContactUs component
