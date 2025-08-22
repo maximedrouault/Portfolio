@@ -302,29 +302,35 @@ export const experience: ExperienceType[] = [
     company: '',
     companyLogo: 'img/icons/common/openclassrooms.jpg',
     date: '2022 – 2025',
-    desc: "Réalisation de 30 projets professionnels me permettant de maîtriser les technologies et compétences suivantes :",
+    desc: 'Réalisation de 30 projets professionnels me permettant de maîtriser les technologies et compétences suivantes :',
     descBullets: [
-      "Technologies : Java, Spring Boot, Hibernate/JPA, Angular, TypeScript, JavaScript, HTML/CSS, React, Node.js, Express.js, MySQL, PostgreSQL, MongoDB.",
-      "Outils & environnements : Git/GitHub, GitLab CI, GitHub Actions, Maven, Docker, IntelliJ, VSCode, Postman.",
-      "Concepts & pratiques : Microservices, API REST, WebSocket, sécurité (JWT), CI/CD, TDD, DDD, BDD, SOLID.",
-      "Qualité & tests : JUnit, Mockito, WireMock, MockMVC, Jest, Cypress, intégration de Sonar et Quality Gate.",
-      "Méthodologies & gestion de projet : Agile (Scrum/Kanban), UML, modélisation de bases de données, documentation Swagger/OpenAPI."
-    ]
+      'Langages : Java, JavaScript, TypeScript, HTML, CSS',
+      'Frameworks et Bibliothèques : Angular, React, Spring, Hibernate/JPA, Node.js, Express.js, Bootstrap, Thymeleaf',
+      'Bases de Données : SQL (MySQL, PostgreSQL), NoSQL (MongoDB)',
+      'Intégration / déploiement continue CI/CD : GitHub Actions, GitLab CI',
+      'Cloud & Infrastructures : AWS, VPS, virtualisation (VM), conteneurisation (Docker)',
+      'Outils et Environnements : Maven, Git/GitHub, IntelliJ, VSCode, Postman',
+      'Documentation : Swagger/OpenAPI, JavaDoc',
+      'Concepts & Architecture : Microservices, API-REST, MVC, WebSocket, UML, programmation concurrente/asynchrone, SOLID, TDD, DDD, BDD',
+      'Sécurité & Qualité : Authentification & sécurité (JWT), Sonar, Quality Gate',
+      'Tests : JUnit, Mockito, WireMock, MockMVC, Jest, Cypress',
+      'Méthodologies : Agile (Scrum/Kanban), DevOps'
+    ],
   },
   {
     role: 'Informaticien polyvalent',
     company: 'Serveurcom/Amix/Fatech/Medion/Carrefour',
     companyLogo: 'img/icons/common/experiences-logo.png',
     date: '2000 – 2017',
-    desc: "Missions diverses :",
+    desc: 'Missions diverses :',
     descBullets: [
-      "Serveurcom : Responsable support technique revendeur (réseaux et télécoms N2/N3).",
-      "Amix : Administrateur systèmes, réseaux et télécoms / Intégrateur logiciels métiers (médicaux/gestion).",
-      "Fatech : Administrateur systèmes et réseaux.",
-      "Medion : Technicien service d’assistance informatique.",
-      "Carrefour : Technicien SAV matériels informatique."
-    ]
-  }
+      'Serveurcom : Responsable support technique revendeur (réseaux et télécoms N2/N3).',
+      'Amix : Administrateur systèmes, réseaux et télécoms / Intégrateur logiciels métiers (médicaux/gestion).',
+      'Fatech : Administrateur systèmes et réseaux.',
+      'Medion : Technicien service d’assistance informatique.',
+      'Carrefour : Technicien SAV matériels informatique.',
+    ],
+  },
 ];
 
 export const projects: ProjectType[] = [
