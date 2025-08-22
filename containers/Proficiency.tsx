@@ -1,6 +1,6 @@
 import React from 'react';
 import { SkillBars } from '../portfolio';
-import { Container, Row, Progress, Col } from 'reactstrap';
+import { Col, Container, Row } from 'reactstrap';
 import Fade from 'react-reveal/Fade';
 import GreetingLottie from '../components/DisplayLottie';
 
@@ -18,10 +18,10 @@ const Proficiency = () => {
                     <div className="progress-label">
                       <span>{skill.Stack}</span>
                     </div>
-                    <div className="progress-percentage">
-                      <span>{skill.progressPercentage}</span>
+                    {/*<div className="progress-percentage">*/}
+                      {/*<span>{skill.progressPercentage}</span>*/}
                       {/* <span>{skill.progressPercentage}%</span> */}
-                    </div>
+                    {/*</div>*/}
                     {/* <Progress
                       max="100"
                       value={skill.progressPercentage}

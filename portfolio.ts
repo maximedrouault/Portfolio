@@ -13,11 +13,14 @@ import {
 
 export const greetings: GreetingsType = {
   name: '<Maxime DROUAULT />',
-  title: "Bonjour, je suis Maxime,",
-  description:
-    "Je suis un développeur Web passionné ayant une expérience du développement Front-end avec HTML/CSS, JS et React, ainsi que du Back-end avec Express JS, Node JS et MongoDB. Je possède par ailleurs une expérience de plus d'une quinzaine d'années côté IT, en tant que technicien, administrateur réseaux et formateur.",
-  resumeLink:
-    "CV-DROUAULT-Maxime.pdf"
+  title: 'Développeur Java et Angular',
+  description: `Avec 18 ans dʼexpérience dans lʼIT et diplômé dʼun Bac+5 en développement logiciel, jʼai choisi de me spécialiser en Java et Angular. Je maîtrise également Spring, lʼécosystème CI/CD et Cloud.
+
+    Mon parcours en systèmes, réseaux et télécoms mʼapporte une vision globale des environnements IT.
+    Jʼallie expertise technique, rigueur et capacité dʼadaptation pour contribuer efficacement à vos projets.
+
+    Je suis actuellement ouvert aux opportunités professionnelles en tant que développeur, alors n'hésitez pas à me contacter afin d'échanger sur une possible future collaboration.`,
+  resumeLink: 'CV - Maxime_DROUAULT - Développeur_Java_et_Angular.pdf',
 };
 
 export const openSource = {
@@ -29,10 +32,7 @@ export const contact = {};
 export const socialLinks: SocialLinksType = {
   url: 'https://maximedrouault.vercel.app/',
   linkedin: 'https://www.linkedin.com/in/maximedrouault/',
-  github: 'https://github.com/maximedrouault',
-  instagram: 'https://www.instagram.com/drouaultmaxime/',
-  facebook: 'https://www.facebook.com/maxime.drouault.7',
-  twitter: 'https://twitter.com/MaximeDrouault',
+  github: 'https://github.com/maximedrouault'
 };
 
 export const skillsSection: SkillsSectionType = {
@@ -44,31 +44,27 @@ export const skillsSection: SkillsSectionType = {
       lottieAnimationFile: '/lottie/skills/skills.json', // Path of Lottie Animation JSON File
       skills: [
         emoji(
-          "⚡ Création d'applications à page unique (SPA) et également Responsive."
+          "⚡ Création d'applications réactives (SPA) et responsives sous Angular."
         ),
-        emoji("⚡ Création de sites Web statiques et dynamiques."),
-        emoji("⚡ Création d'API RESTful complètes, sous Express JS et Node JS."),
+        emoji("⚡ Création d'API-REST complètes en Java et Spring."),
+        emoji("⚡ Modélisation et persistance de données en base de données SQL ou NoSQL."),
       ],
       softwareSkills: [
         {
-          skillName: 'HTML 5',
-          fontAwesomeClassName: 'vscode-icons:file-type-html',
+          skillName: 'TypeScript',
+          fontAwesomeClassName: 'logos:typescript-icon',
         },
         {
-          skillName: 'CSS 3',
-          fontAwesomeClassName: 'vscode-icons:file-type-css',
-        },
-        {
-          skillName: 'JavaScript',
-          fontAwesomeClassName: 'logos:javascript',
+          skillName: 'Angular',
+          fontAwesomeClassName: 'devicon:angularjs',
         },
         {
           skillName: 'React',
           fontAwesomeClassName: 'logos:react',
         },
         {
-          skillName: 'React Router',
-          fontAwesomeClassName: 'logos:react-router',
+          skillName: 'BootStrap',
+          fontAwesomeClassName: 'devicon:bootstrap',
         },
         {
           skillName: 'Express JS',
@@ -79,58 +75,79 @@ export const skillsSection: SkillsSectionType = {
           fontAwesomeClassName: 'vscode-icons:file-type-node',
         },
         {
+          skillName: 'Java',
+          fontAwesomeClassName: 'logos:java',
+        },
+        {
+          skillName: 'Maven',
+          fontAwesomeClassName: 'devicon:maven',
+        },
+        {
+          skillName: 'Spring',
+          fontAwesomeClassName: 'devicon:spring',
+        },
+        {
+          skillName: 'JWT',
+          fontAwesomeClassName: 'logos:jwt-icon',
+        },
+        {
+          skillName: 'MySQL',
+          fontAwesomeClassName: 'devicon:mysql',
+        },
+        {
           skillName: 'MongoDB',
           fontAwesomeClassName: 'vscode-icons:file-type-mongo',
-        },
-        {
-          skillName: 'NPM',
-          fontAwesomeClassName: 'logos:npm-icon',
-        },
-        {
-          skillName: 'Yarn',
-          fontAwesomeClassName: 'logos:yarn',
-        },
-        {
-          skillName: 'VSCode',
-          fontAwesomeClassName: 'devicon:vscode',
         },
         {
           skillName: 'Git - GitHub',
           fontAwesomeClassName: 'logos:github-icon',
         },
         {
-          skillName: 'Reponsive Design',
+          skillName: 'Responsive Design',
           fontAwesomeClassName: 'mdi:responsive',
+        },
+        {
+          skillName: 'Swagger',
+          fontAwesomeClassName: 'material-icon-theme:swagger',
+        },
+        {
+          skillName: 'Sonar',
+          fontAwesomeClassName: 'logos:sonarcloud-icon',
+        },
+        {
+          skillName: 'JUnit',
+          fontAwesomeClassName: 'devicon:junit',
+        },
+        {
+          skillName: 'Jest',
+          fontAwesomeClassName: 'logos:jest',
+        },
+        {
+          skillName: 'Cypress',
+          fontAwesomeClassName: 'logos:cypress-icon',
         }
       ],
     },
     {
-      title: 'Cloud Infra-Architecture réseaux',
+      title: 'Cloud, Infra-Architecture réseaux et CI/CD',
       lottieAnimationFile: '/lottie/skills/cloudinfra.json', // Path of Lottie Animation JSON File
       skills: [
-        emoji('⚡ Expériences sur divers hébergements web et plateformes cloud.'),
+        emoji('⚡ Expérience sur divers hébergements web et plateformes Cloud.'),
         emoji(
-          '⚡ Hébergement et maintenance de sites web avec intégration de base de données.'
+          '⚡ Virtualisation de serveurs.'
         ),
         emoji(
-          '⚡ Virtualisation de serveur via VMWare ESXi.'
-        ),
-        emoji(
-          '⚡ Expérience de plus de 15 ans en infogérance de réseaux, parc informatiques, téléphonie IP et serveurs.'
+          '⚡ Expérience de plus de 18 ans en infogérance de réseaux, parcs informatiques, téléphonie IP et serveurs.'
         ),
       ],
       softwareSkills: [
         // ? Check README To get icon details
         {
-          skillName: 'Hébergement',
+          skillName: 'Hébergement VPS',
           fontAwesomeClassName: 'solar:server-square-cloud-bold',
         },
         {
-          skillName: 'Apache',
-          fontAwesomeClassName: 'vscode-icons:file-type-apache',
-        },
-        {
-          skillName: 'VWWare',
+          skillName: 'Virtualisation',
           fontAwesomeClassName: 'carbon:logo-vmware',
         },
         {
@@ -144,6 +161,14 @@ export const skillsSection: SkillsSectionType = {
         {
           skillName: 'Gestion de parc informatique',
           fontAwesomeClassName: 'mdi:lan-check',
+        },
+        {
+          skillName: 'Docker',
+          fontAwesomeClassName: 'logos:docker-icon',
+        },
+        {
+          skillName: 'Cloud AWS',
+          fontAwesomeClassName: 'logos:aws',
         }
       ],
     },
@@ -152,13 +177,13 @@ export const skillsSection: SkillsSectionType = {
       lottieAnimationFile: '/lottie/skills/othersskills.json', // Path of Lottie Animation JSON File
       skills: [
         emoji(
-          '⚡ Connaissances des méthodes de gestion de projets Agile et en cascade.'
+          '⚡ Connaissance des méthodes de gestion de projets Agile (Scrum/Kanban).'
         ),
         emoji(
-          '⚡ Connaissances des outils de gestion de projets, Trello et Asana.'
+          "⚡ Connaissance des outils de gestion de projet."
         ),
         emoji(
-          "⚡ Connaissances sur l'outil de maquettage Figma."
+          "⚡ Connaissance de l'outil de maquettage Figma."
         ),
       ],
       softwareSkills: [
@@ -190,35 +215,33 @@ export const skillsSection: SkillsSectionType = {
 export const SkillBars: SkillBarsType[] = [
   {
     Stack: 'Orienté vers les objectifs', //Insert stack or technology you have experience in
-    // progressPercentage: '100', //Insert relative proficiency in percentage
-  },
-  {
-    Stack: 'Collaboration',
-    // progressPercentage: '90'
-  },
-  {
-    Stack: 'Positivité',
-    // progressPercentage: '85'
-  },
-  {
-    Stack: 'Adaptabilité',
-    // progressPercentage: '95'
-  },
-  {
-    Stack: 'Persévérant',
-    // progressPercentage: '100'
-  },
-  {
-    Stack: 'Empathique',
-    // progressPercentage: '100'
   },
   {
     Stack: 'Rigoureux',
-    // progressPercentage: '100'
+  },
+  {
+    Stack: 'Organisé',
+  },
+  {
+    Stack: 'Esprit analytique',
+  },
+  {
+    Stack: 'Collaboratif',
+  },
+  {
+    Stack: 'Pédagogue',
+  },
+  {
+    Stack: 'Adaptable',
+  },
+  {
+    Stack: 'Persévérant',
+  },
+  {
+    Stack: 'Empathique',
   },
   {
     Stack: 'Autonome',
-    // progressPercentage: '100'
   }
 ];
 

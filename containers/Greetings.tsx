@@ -28,7 +28,7 @@ const Greetings = () => {
           <Container className="py-lg-md d-flex">
             <div className="col px-0">
               <Row className="align-items-center">
-                <Col lg="6">
+                <Col lg="7">
                   <h2 className="display-3 text-white">
                     {greetings.title + ' '}
                   </h2>
@@ -50,7 +50,7 @@ const Greetings = () => {
                     </div>
                   )}
                 </Col>
-                <Col lg="6">
+                <Col lg="5">
                   <GreetingLottie animationPath="/lottie/coding.json" />
                 </Col>
               </Row>
