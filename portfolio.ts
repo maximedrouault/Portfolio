@@ -19,7 +19,7 @@ export const greetings: GreetingsType = {
     Mon parcours en systèmes, réseaux et télécoms mʼapporte une vision globale des environnements IT.
     Jʼallie expertise technique, rigueur et capacité dʼadaptation pour contribuer efficacement à vos projets.
 
-    Je suis actuellement ouvert aux opportunités professionnelles en tant que développeur, alors n'hésitez pas à me contacter afin d'échanger sur une possible future collaboration.`,
+    Disponible dès à présent pour de nouvelles opportunités en développement, n’hésitez pas à me contacter.`,
   resumeLink: 'CV - Maxime_DROUAULT - Développeur_Java_et_Angular.pdf',
 };
 
@@ -126,7 +126,7 @@ export const skillsSection: SkillsSectionType = {
           skillName: 'Cypress',
           fontAwesomeClassName: 'logos:cypress-icon',
         }
-      ],
+      ]
     },
     {
       title: 'Cloud, Infra-Architecture réseaux et CI/CD',
@@ -134,7 +134,7 @@ export const skillsSection: SkillsSectionType = {
       skills: [
         emoji('⚡ Expérience sur divers hébergements web et plateformes Cloud.'),
         emoji(
-          '⚡ Virtualisation de serveurs.'
+          '⚡ Virtualisation et conteneurisation d’environnements.'
         ),
         emoji(
           '⚡ Expérience de plus de 18 ans en infogérance de réseaux, parcs informatiques, téléphonie IP et serveurs.'
@@ -170,7 +170,7 @@ export const skillsSection: SkillsSectionType = {
           skillName: 'Cloud AWS',
           fontAwesomeClassName: 'logos:aws',
         }
-      ],
+      ]
     },
     {
       title: 'Compétences annexes',
@@ -207,9 +207,9 @@ export const skillsSection: SkillsSectionType = {
           skillName: 'Figma',
           fontAwesomeClassName: 'ph:figma-logo',
         }
-      ],
-    },
-  ],
+      ]
+    }
+  ]
 };
 
 export const SkillBars: SkillBarsType[] = [
@@ -258,7 +258,8 @@ export const educationInfo: EducationType[] = [
       "Compétences annexes : Architecture logicielle, sécurité applicative, TDD/DDD/BDD, optimisation de performance, documentation Swagger/OpenAPI.",
       "Mise en pratique : Développement et déploiement d’applications robustes et sécurisées en environnement cloud-native."
     ]
-  },{
+  },
+  {
     schoolName: 'Développeur concepteur logiciel',
     subHeader: 'Spécialité : Développeur dʼapplication Java',
     duration: '2023-2024',
@@ -281,7 +282,7 @@ export const educationInfo: EducationType[] = [
       'Technologies abordées : HTML, CSS, JavaScript, React, Git/GitHub, Node.js, Express.js, MySQL, MongoDB, API REST.',
       'Compétences annexes : Gestion de projets, méthodes Agile et Cascade.',
       'Approches complémentaires : Responsive Design, SEO, Accessibilité.'
-    ],
+    ]
   },
   {
     schoolName: 'Autodidacte IT',
@@ -292,17 +293,17 @@ export const educationInfo: EducationType[] = [
       'Hébergement, Nom de domaine, MX, DNS.',
       'Téléphonie IP Centrex (VoIP), Trunk SIP, RTC',
       'Compétences abordées : Administration réseaux et serveurs, maintenance informatique.'
-    ],
-  },
+    ]
+  }
 ];
 
 export const experience: ExperienceType[] = [
   {
     role: 'Développement web et logiciel',
     company: '',
-    companyLogo: 'img/icons/common/openclassrooms.jpg',
+    companyLogo: 'img/icons/common/experiences-logo.png',
     date: '2022 – 2025',
-    desc: 'Réalisation de 30 projets professionnels me permettant de maîtriser les technologies et compétences suivantes :',
+    desc: 'Réalisation de 30 projets professionnels mettant en application concrète les technologies et compétences suivantes :',
     descBullets: [
       'Langages : Java, JavaScript, TypeScript, HTML, CSS',
       'Frameworks et Bibliothèques : Angular, React, Spring, Hibernate/JPA, Node.js, Express.js, Bootstrap, Thymeleaf',
@@ -315,11 +316,11 @@ export const experience: ExperienceType[] = [
       'Sécurité & Qualité : Authentification & sécurité (JWT), Sonar, Quality Gate',
       'Tests : JUnit, Mockito, WireMock, MockMVC, Jest, Cypress',
       'Méthodologies : Agile (Scrum/Kanban), DevOps'
-    ],
+    ]
   },
   {
     role: 'Informaticien polyvalent',
-    company: 'Serveurcom/Amix/Fatech/Medion/Carrefour',
+    company: 'Serveurcom / Amix / Fatech / Medion / Carrefour',
     companyLogo: 'img/icons/common/experiences-logo.png',
     date: '2000 – 2017',
     desc: 'Missions diverses :',
@@ -328,45 +329,77 @@ export const experience: ExperienceType[] = [
       'Amix : Administrateur systèmes, réseaux et télécoms / Intégrateur logiciels métiers (médicaux/gestion).',
       'Fatech : Administrateur systèmes et réseaux.',
       'Medion : Technicien service d’assistance informatique.',
-      'Carrefour : Technicien SAV matériels informatique.',
-    ],
+      'Carrefour : Technicien SAV matériels informatique.'
+    ]
   },
 ];
 
 export const projects: ProjectType[] = [
   {
     name: 'Booki',
-    desc: "Réalisation complète d'un site de location d'hébergements à partir d'une maquette Figma. HTML / CSS / Responsive",
+    desc: `Développement d’un site de réservation d’hébergements à partir d’une maquette Figma. Mise en place d’un design responsive permettant une navigation fluide sur desktop, tablette et mobile.
+
+      Technos clés : HTML, CSS, Responsive Design.`,
     github: 'https://github.com/maximedrouault/Booki',
     link: 'https://maximedrouault.github.io/Booki/',
-    projectsImg: "img/booki.jpg"
+    projectsImg: 'img/booki.jpg'
   },
   {
     name: 'Portfolio Architecte Sophie-BLUEL',
-    desc: "Création d'un site web pour présenter les divers projets de l'architecte, avec espace admin protégé par authentification pour leurs gestions. HTML / CSS / JS / API / Auth Token",
+    desc: `Création d’un site vitrine interactif pour présenter les projets d’une architecte. Intégration d’un espace administrateur sécurisé avec authentification par token, permettant la gestion dynamique des contenus.
+      
+      Technos clés : HTML, CSS, JavaScript, API, JWT.`,
     github: 'https://github.com/maximedrouault/Sophie-BLUEL-Architecte',
-    // link: 'https://github.com/maximedrouault/Sophie-BLUEL-Architecte',
-    projectsImg: "img/portfolio-sophie-bluel-architecte.jpg"
+    projectsImg: 'img/portfolio-sophie-bluel-architecte.jpg'
   },
   {
     name: 'Nina CARDUCCI - Photographe',
-    desc: "Debug et optimisation du site d'une photographe. Audit et amélioration, SEO, Meta Tags, accessibilité, performance et corrections des bugs. LIGHTHOUSE / WAVE / SEO / OPENGRAPH / GOOGLE RICH / SCHEMA.ORG / Responsive",
+    desc: `Optimisation et débogage complet d’un site vitrine pour une photographe professionnelle. Amélioration des performances, du référencement SEO, de l’accessibilité et correction des bugs afin d’offrir une meilleure expérience utilisateur.
+      
+      Technos clés : HTML, CSS, JavaScript, Lighthouse, WAVE, OpenGraph, Schema.org.`,
     github: 'https://github.com/maximedrouault/Nina-CARDUCCI-Photographe',
     link: 'https://maximedrouault.github.io/Nina-CARDUCCI-Photographe/',
-    projectsImg: "img/nina-carducci-photographe.jpg"
+    projectsImg: 'img/nina-carducci-photographe.jpg'
   },
   {
     name: 'KASA',
-    desc: "Réalisation complète en React d'un site de location d'hébergements à partir d'une maquette Figma.  HTML / CSS / REACT / REACT ROUTER / Responsive",
+    desc: `Développement d’une application front-end en React pour la location d’hébergements, basée sur une maquette Figma. L’application propose une navigation fluide, la gestion des routes dynamiques et un affichage responsive optimisé pour web et mobile.
+      
+      Technos clés : React, React Router, HTML, CSS.`,
     github: 'https://github.com/maximedrouault/Kasa',
     link: 'https://maxime-drouault-kasa.vercel.app/',
-    projectsImg: "img/kasa.jpg"
+    projectsImg: 'img/kasa.jpg'
   },
   {
     name: 'Mon Vieux Grimoire',
-    desc: "Réalisation complète d'une API Rest (CRUD) avec gestion d'authentification, calcul de note moyenne et compression des images via Sharp. Express JS / Node JS / MongoDB / Mongoose / API / BCRYPT / JWT / MULTER / SHARP",
+    desc:
+      `Développement d’une API REST sécurisée permettant de gérer une bibliothèque collaborative en ligne. Les utilisateurs peuvent ajouter, consulter et noter des livres, avec un système de calcul automatique des notes moyennes.
+      L’application intègre également la gestion des utilisateurs et la compression d’images pour optimiser le stockage.
+      
+      Technos clés : Node.js, Express, MongoDB, Mongoose, JWT, Multer, Sharp.`,
     github: 'https://github.com/maximedrouault/Mon-Vieux-Grimoire',
-    projectsImg: "img/mon-vieux-grimoire.jpg"
+    projectsImg: 'img/mon-vieux-grimoire.jpg'
+  },
+  {
+    name: 'PayMyBuddy',
+    desc:
+      `Application web de gestion de transactions entre amis développée avec Spring Boot et MySQL.
+      Les utilisateurs peuvent créer un profil, ajouter des connexions, transférer de l’argent et suivre l’historique de leurs opérations. L’application intègre un système de wallet virtuel, la gestion des commissions et un espace d’administration sécurisé.
+      
+      Technos clés : Spring Boot, Spring Security, Hibernate/JPA, Thymeleaf, MySQL, Bootstrap.`,
+    github: 'https://github.com/maximedrouault/PayMyBuddy',
+    projectsImg: 'img/paymybuddy.jpg'
+  },
+  {
+    name: 'MediLabo',
+    desc:
+      `Application basée sur une architecture microservices pour la gestion de données médicales (patients, notes et évaluations).
+      Le système évalue le risque de diabète à partir des données et notes des patients, grâce à un moteur d’analyse dédié.
+      L’architecture repose sur Spring Cloud (Config, Gateway, Eureka) avec des microservices conteneurisés sous Docker, et des bases PostgreSQL et MongoDB.
+
+      Technos clés : Spring Boot, Spring Cloud, Eureka, Spring Security, PostgreSQL, MongoDB, Docker, Thymeleaf, Bootstrap.`,
+    github: 'https://github.com/maximedrouault/MediLabo',
+    projectsImg: 'img/mediLabo.jpg'
   }
 ];
 
