@@ -400,6 +400,36 @@ export const projects: ProjectType[] = [
       Technos clés : Spring Boot, Spring Cloud, Eureka, Spring Security, PostgreSQL, MongoDB, Docker, Thymeleaf, Bootstrap.`,
     github: 'https://github.com/maximedrouault/MediLabo',
     projectsImg: 'img/medilabo.jpg'
+  },
+  {
+    name: 'TeleSport',
+    desc:
+      `Application web interactive en Angular permettant de visualiser les statistiques des Jeux Olympiques. Les utilisateurs peuvent consulter le nombre de médailles par pays, les participations et d’autres données clés via des graphiques dynamiques et des pages de détails.
+
+       Technos clés : Angular, TypeScript, RxJS, Chart.js.`,
+    github: 'https://github.com/maximedrouault/TeleSport',
+    projectsImg: 'img/telesport.jpg'
+  },
+  {
+    name: 'ChaTop',
+    desc:
+      `Développement du backend d’une plateforme de location avec Spring Boot.
+      L’application gère les annonces, l’authentification sécurisée par JWT, la gestion des utilisateurs, la messagerie entre locataires et propriétaires, et le stockage des images sur AWS S3. Documentation complète avec Swagger / OpenAPI et gestion des exceptions centralisée.
+
+      Technos clés : Spring Boot, Spring Security, JWT, JPA/Hibernate, MapStruct, MySQL, AWS S3, Swagger/OpenAPI.`,
+    github: 'https://github.com/maximedrouault/ChaTop-back',
+    projectsImg: 'img/chatop.jpg'
+  },
+  {
+    name: 'MDD (Monde De Dev)',
+    desc:
+      `Plateforme full-stack offrant un espace collaboratif pour les passionnés de programmation.
+      Les utilisateurs peuvent s’abonner à des thématiques, accéder à un fil d’actualité personnalisé, publier des articles, commenter, et gérer leur profil.
+      L’application est responsive (mobile & desktop) et sécurisée avec JWT.
+
+      Technos clés : Spring Boot, Spring Security (JWT), Spring Data JPA, MapStruct, Lombok, MySQL, Angular, PrimeNG, RxJS.`,
+    github: 'https://github.com/maximedrouault/mdd',
+    projectsImg: 'img/mdd.jpg'
   }
 ];
 
@@ -450,7 +480,7 @@ export const seoData: SEODataType = {
     'Un développeur passionné pour changer le monde avec la technologie.',
   author: 'Maxime DROUAULT',
   image: 'https://avatars.githubusercontent.com/u/119673669?v=4',
-  url: 'https://maximedrouault.vercel.app/',
+  url: 'https://www.maximedrouault.com/',
   keywords: [
     'Maxime',
     'Maxime DROUAULT',
