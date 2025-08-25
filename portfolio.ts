@@ -399,7 +399,7 @@ export const projects: ProjectType[] = [
 
       Technos clés : Spring Boot, Spring Cloud, Eureka, Spring Security, PostgreSQL, MongoDB, Docker, Thymeleaf, Bootstrap.`,
     github: 'https://github.com/maximedrouault/MediLabo',
-    projectsImg: 'img/mediLabo.jpg'
+    projectsImg: 'img/medilabo.jpg'
   }
 ];
 
