@@ -106,6 +106,7 @@ export const ContactUs = () => {
                           placeholder="Votre nom"
                           type="text"
                           name="user_name"
+                          required={true}
                           aria-label="Votre nom"
                         />
                       </InputGroup>
@@ -121,6 +122,7 @@ export const ContactUs = () => {
                           placeholder="Votre adresse E-Mail"
                           name="user_email"
                           type="email"
+                          required={true}
                           aria-label="Votre adresse E-Mail"
                         />
                       </InputGroup>
@@ -133,6 +135,7 @@ export const ContactUs = () => {
                         placeholder="Votre message..."
                         rows="4"
                         type="textarea"
+                        required={true}
                         aria-label="Votre message"
                       />
                     </FormGroup>
