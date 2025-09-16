@@ -20,7 +20,7 @@ export const greetings: GreetingsType = {
     Jʼallie expertise technique, rigueur et capacité dʼadaptation pour contribuer efficacement à vos projets.
 
     Disponible dès à présent pour de nouvelles opportunités en développement, n’hésitez pas à me contacter.`,
-  resumeLink: 'CV - Maxime_DROUAULT - Développeur_Java_et_Angular.pdf',
+  resumeLink: 'CV - Maxime_DROUAULT - Développeur_Java_et_Angular - 18_ans_XP_IT.pdf',
 };
 
 export const openSource = {
