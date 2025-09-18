@@ -30,7 +30,6 @@ export const openSource = {
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  url: 'https://maximedrouault.vercel.app/',
   linkedin: 'https://www.linkedin.com/in/maximedrouault/',
   github: 'https://github.com/maximedrouault'
 };
@@ -299,7 +298,7 @@ export const educationInfo: EducationType[] = [
 
 export const experience: ExperienceType[] = [
   {
-    role: 'Développement web et logiciel',
+    role: 'Développement web et logiciel - projets formations',
     company: '',
     companyLogo: 'img/icons/common/experiences-logo.png',
     date: '2022 – 2025',
@@ -319,7 +318,7 @@ export const experience: ExperienceType[] = [
     ]
   },
   {
-    role: 'Informaticien polyvalent',
+    role: 'Informaticien polyvalent IT',
     company: 'Serveurcom / Amix / Fatech / Medion / Carrefour',
     companyLogo: 'img/icons/common/experiences-logo.png',
     date: '2000 – 2017',
@@ -435,9 +434,27 @@ export const projects: ProjectType[] = [
 
 export const feedbacks: FeedbackType[] = [
   {
+    name: 'Formation : Expert en développement logiciel - Jurys',
+    feedback:
+      `Jury 1 : Maxime a démontré une bonne compréhension des attentes pour chaque projet, ainsi qu'une bonne connaissance technique pour chaque rendu. Ses travaux étaient de qualité. Ses pésentations étaient claires et bien rythmées. Il sait défendre et expliquer ses projets et choix techniques. Beau parcours.
+      Jury 2 : Parcours de qualité, les compétences sont acquises avec une très bonne réalisation des projets.`
+  },
+  {
+    name: 'Formation : Développeur concepteur logiciel - Jurys',
+    feedback:
+      `Jury 1 : Maxime maitrise les compétences nécessaires à la réalisation des projets et a fait de bons livrables.
+      Jury 2 : Toutes les compétences du référentiel sont démontrées. Le niveau global est bon avec une acquisition des compétences conforme au niveau attendu. Le candidat pourra facilement s'insérer sur le marché du travail.`
+  },
+  {
+    name: 'Formation : Développeur intégrateur web - Jurys',
+    feedback:
+      `Jury 1 : Livrables et soutenances de bonne qualité, les compétences attendues sont acquises. Félicitations !
+      Jury 2 : Très bon travail ! Toutes les compétences sont acquises et sont conformes au niveau attendu. Le code contient des commentaires utiles. La qualité de l'ensemble est très bonne. C'est un parcours sans faute, bravo !`
+  },
+  {
     name: 'Éric ALLAIN - Évaluateur',
     feedback:
-      "Points forts : Maxime a réalisé un excellent travail sur ce projet en créant un code très bien optimisé et commenté pour chacune des différentes fonctionnalités implémentées. Maxime a réalisé une très bonne présentation en s'appuyant pour l'introduction sur un PowerPoint, puis l'ensemble de l'explication des différentes fonctionnalités implémentées ont été réalisés à partir de Visual Studio Code. Félicitations pour cet excellent travail et bonne chance pour la suite de ta formation développeur web.",
+      "Points forts : Maxime a réalisé un excellent travail sur ce projet en créant un code très bien optimisé et commenté pour chacune des différentes fonctionnalités implémentées. Maxime a réalisé une très bonne présentation en s'appuyant pour l'introduction sur un PowerPoint, puis l'ensemble de l'explication des différentes fonctionnalités implémentées ont été réalisés à partir de Visual Studio Code. Félicitations pour cet excellent travail et bonne chance pour la suite de ta formation développeur web."
   },
   {
     name: 'Jean-Baptiste Schmidt - Évaluateur',
@@ -446,28 +463,28 @@ export const feedbacks: FeedbackType[] = [
       -Livrables complets, clairs, cohérents et professionnels.
       -Excellente capacité de justification des choix fonctionnels et techniques.
       -Respect des standards d’architecture, de sécurité et de conformité.
-      -Bonne anticipation des évolutions futures (microservices, internationalisation, RGPD).`,
+      -Bonne anticipation des évolutions futures (microservices, internationalisation, RGPD).`
   },
   {
     name: 'Bassam BOULACHEB - Évaluateur',
     feedback:
-      'Points forts : Maxime a réalisé un excellent travail, tant au niveau du livrable que de la soutenance. Il a parfaitement respecté les critères d’évaluation pour la création du plan de sauvegarde des données et du plan de test, et a démontré une solide compréhension des concepts de qualité et de sécurité des opérations.',
+      'Points forts : Maxime a réalisé un excellent travail, tant au niveau du livrable que de la soutenance. Il a parfaitement respecté les critères d’évaluation pour la création du plan de sauvegarde des données et du plan de test, et a démontré une solide compréhension des concepts de qualité et de sécurité des opérations.'
   },
   {
     name: 'Christian FODOUP - Évaluateur',
     feedback:
-      'Points forts : Bonne maîtrise de son travail. Explications claires. Bonne structuration des livrables.',
+      'Points forts : Bonne maîtrise de son travail. Explications claires. Bonne structuration des livrables.'
   },
   {
     name: 'Cédric TCHANA - Évaluateur',
     feedback:
-      "Points forts : Rapport très bien monté. Soucis particuliers apporté aux graphiques représentatifs. L'étudiant a effectué une bonne présentation basée sur ses livrables.",
+      "Points forts : Rapport très bien monté. Soucis particuliers apporté aux graphiques représentatifs. L'étudiant a effectué une bonne présentation basée sur ses livrables."
   },
   {
     name: 'Danielle PRISCA - Évaluateur',
     feedback:
-      'Points forts : L’étudiant a bien su utiliser les props pour gérer ce qui change à chaque fois. Bonne organisation des composants dans différents fichiers. Code très bien indenté. Code très bien commenté.',
-  },
+      'Points forts : L’étudiant a bien su utiliser les props pour gérer ce qui change à chaque fois. Bonne organisation des composants dans différents fichiers. Code très bien indenté. Code très bien commenté.'
+  }
 ];
 
 // option to hide or show the ContactUs component
@@ -489,5 +506,5 @@ export const seoData: SEODataType = {
     'Portfolio',
     'Maxime Portfolio ',
     'Maxime DROUAULT Portfolio',
-  ],
+  ]
 };

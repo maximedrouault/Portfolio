@@ -5,20 +5,6 @@ import { socialLinks } from '../portfolio';
 const SocialLinks = () => {
   return (
     <div className="btn-wrapper text-lg">
-      {socialLinks.url && (
-        <Button
-          className="btn-icon-only rounded-circle ml-1"
-          color="white"
-          rel="noopener"
-          aria-label="URL"
-          href={socialLinks.url}
-          target="_blank"
-        >
-          <span className="btn-inner--icon">
-            <i className="fa fa-link" />
-          </span>
-        </Button>
-      )}
       {socialLinks.linkedin && (
         <Button
           className="btn-icon-only rounded-circle ml-1"
