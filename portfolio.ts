@@ -14,12 +14,12 @@ import {
 export const greetings: GreetingsType = {
   name: '<Maxime DROUAULT />',
   title: 'Développeur Java et Angular',
-  description: `Avec 18 ans dʼexpérience dans lʼIT et diplômé dʼun Bac+5 en développement logiciel, jʼai choisi de me spécialiser en Java et Angular. Je maîtrise également Spring, lʼécosystème CI/CD et Cloud.
+  description: `
+  J’apporte une vision globale de l’IT, alliant expertise technique, rigueur et sens du concret.
+  Pédagogue et à l’aise avec tout type d’interlocuteur, je sais comprendre les besoins et les traduire en solutions performantes et durables.
+  Curieux et inventif, j’aime concevoir des applications fiables et utiles, en privilégiant la collaboration et la qualité.
 
-    Mon parcours en systèmes, réseaux et télécoms mʼapporte une vision globale des environnements IT.
-    Jʼallie expertise technique, rigueur et capacité dʼadaptation pour contribuer efficacement à vos projets.
-
-    Disponible dès à présent pour de nouvelles opportunités en développement, n’hésitez pas à me contacter.`,
+  Disponible dès à présent pour de nouvelles opportunités en développement, n’hésitez pas à me contacter.`,
   resumeLink: 'CV - Maxime_DROUAULT - Développeur_Java_et_Angular - 18_ans_XP_IT.pdf',
 };
 
@@ -36,13 +36,7 @@ export const socialLinks: SocialLinksType = {
 
 export const skillsSection: SkillsSectionType = {
   title: 'Ce que je fais',
-  subTitle:`
-    J’apporte une vision globale de l’IT, alliant expertise technique, rigueur et sens du concret.
-    
-    Pédagogue et à l’aise avec tout type d’interlocuteur, je sais comprendre les besoins et les traduire en solutions performantes et durables.
-    
-    Curieux et inventif, j’aime concevoir des applications fiables et utiles, en privilégiant la collaboration et la qualité.
-    `,
+  subTitle:'',
   data: [
     {
       title: 'Front-end et Back-end',
