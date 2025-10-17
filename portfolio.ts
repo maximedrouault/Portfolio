@@ -36,7 +36,13 @@ export const socialLinks: SocialLinksType = {
 
 export const skillsSection: SkillsSectionType = {
   title: 'Ce que je fais',
-  subTitle: 'Je suis un développeur passionné pour changer le monde avec la technologie.',
+  subTitle:`
+    J’apporte une vision globale de l’IT, alliant expertise technique, rigueur et sens du concret.
+    
+    Pédagogue et à l’aise avec tout type d’interlocuteur, je sais comprendre les besoins et les traduire en solutions performantes et durables.
+    
+    Curieux et inventif, j’aime concevoir des applications fiables et utiles, en privilégiant la collaboration et la qualité.
+    `,
   data: [
     {
       title: 'Front-end et Back-end',
@@ -45,8 +51,10 @@ export const skillsSection: SkillsSectionType = {
         emoji(
           "⚡ Création d'applications réactives (SPA) et responsives sous Angular."
         ),
-        emoji("⚡ Création d'API-REST complètes en Java et Spring."),
-        emoji("⚡ Modélisation et persistance de données en base de données SQL ou NoSQL."),
+        emoji("⚡ Création d'API-REST en Java et Spring."),
+        emoji(
+          '⚡ Modélisation et persistance de données en base de données SQL ou NoSQL.'
+        ),
       ],
       softwareSkills: [
         {
@@ -124,17 +132,17 @@ export const skillsSection: SkillsSectionType = {
         {
           skillName: 'Cypress',
           fontAwesomeClassName: 'logos:cypress-icon',
-        }
-      ]
+        },
+      ],
     },
     {
       title: 'Cloud, Infra-Architecture réseaux et CI/CD',
       lottieAnimationFile: '/lottie/skills/cloudinfra.json', // Path of Lottie Animation JSON File
       skills: [
-        emoji('⚡ Expérience sur divers hébergements web et plateformes Cloud.'),
         emoji(
-          '⚡ Virtualisation et conteneurisation d’environnements.'
+          '⚡ Expérience sur divers hébergements web et plateformes Cloud.'
         ),
+        emoji('⚡ Virtualisation et conteneurisation d’environnements.'),
         emoji(
           '⚡ Expérience de plus de 18 ans en infogérance de réseaux, parcs informatiques, téléphonie IP et serveurs.'
         ),
@@ -168,8 +176,8 @@ export const skillsSection: SkillsSectionType = {
         {
           skillName: 'Cloud AWS',
           fontAwesomeClassName: 'logos:aws',
-        }
-      ]
+        },
+      ],
     },
     {
       title: 'Compétences annexes',
@@ -178,12 +186,8 @@ export const skillsSection: SkillsSectionType = {
         emoji(
           '⚡ Connaissance des méthodes de gestion de projets Agile (Scrum/Kanban).'
         ),
-        emoji(
-          "⚡ Connaissance des outils de gestion de projet."
-        ),
-        emoji(
-          "⚡ Connaissance de l'outil de maquettage Figma."
-        ),
+        emoji('⚡ Connaissance des outils de gestion de projet.'),
+        emoji("⚡ Connaissance de l'outil de maquettage Figma."),
       ],
       softwareSkills: [
         {
@@ -205,15 +209,15 @@ export const skillsSection: SkillsSectionType = {
         {
           skillName: 'Figma',
           fontAwesomeClassName: 'ph:figma-logo',
-        }
-      ]
-    }
-  ]
+        },
+      ],
+    },
+  ],
 };
 
 export const SkillBars: SkillBarsType[] = [
   {
-    Stack: 'Orienté vers les objectifs', //Insert stack or technology you have experience in
+    Stack: 'Orienté vers les objectifs',
   },
   {
     Stack: 'Rigoureux',
@@ -240,7 +244,7 @@ export const SkillBars: SkillBarsType[] = [
     Stack: 'Empathique',
   },
   {
-    Stack: 'Autonome',
+    Stack: 'Autonome'
   }
 ];
 
@@ -249,7 +253,7 @@ export const educationInfo: EducationType[] = [
     schoolName: 'Expert en développement logiciel',
     subHeader: 'Spécialité : Développeur Full-Stack Java et Angular',
     duration: '2024-2025',
-    desc: 'Complétion de 13 projets professionnels.',
+    desc: 'Conduite et réalisation de 13 projets professionnels.',
     grade: 'Niveau : BAC+5 - Master',
     descBullets: [
       "Technologies avancées : Java, Spring, Angular, JWT, WebSocket, CI/CD, Docker, AWS (S3, EC2, IAM, etc.).",
@@ -262,7 +266,7 @@ export const educationInfo: EducationType[] = [
     schoolName: 'Développeur concepteur logiciel',
     subHeader: 'Spécialité : Développeur dʼapplication Java',
     duration: '2023-2024',
-    desc: 'Complétion de 9 projets professionnels.',
+    desc: 'Conduite et réalisation de 9 projets professionnels.',
     grade: 'Niveau : BAC+3/4 - Licence',
     descBullets: [
       "Technologies abordées : Java, Spring, Hibernate/JPA, MySQL, PostgreSQL, MongoDB.",
@@ -275,7 +279,7 @@ export const educationInfo: EducationType[] = [
     schoolName: 'Développeur intégrateur web',
     subHeader: 'Spécialité : Développeur Web et Web mobile',
     duration: '2022-2023',
-    desc: 'Complétion de 8 projets professionnels.',
+    desc: 'Conduite et réalisation de 8 projets professionnels.',
     grade: 'Niveau : BAC+2',
     descBullets: [
       'Technologies abordées : HTML, CSS, JavaScript, React, Git/GitHub, Node.js, Express.js, MySQL, MongoDB, API REST.',
@@ -298,23 +302,29 @@ export const educationInfo: EducationType[] = [
 
 export const experience: ExperienceType[] = [
   {
-    role: 'Développement web et logiciel - projets formations',
+    role: 'Développement web et logiciel',
     company: '',
     companyLogo: 'img/icons/common/experiences-logo.png',
-    date: '2022 – 2025',
-    desc: 'Réalisation de 30 projets professionnels mettant en application concrète les technologies et compétences suivantes :',
+    date: `2022 – Aujourd'hui`,
+    desc: `
+    • Développement en cours d’une application assistée par l’IA destinée aux parents séparés.
+    • Développement en cours d’un chatbot pour mon portfolio, présentant mon parcours et mes centres d’intérêt.
+    
+    Conduite et réalisation de trente projets professionnels en conditions réelles ou reconstituées mettant en application concrète les technologies et compétences suivantes :
+    `,
     descBullets: [
       'Langages : Java, JavaScript, TypeScript, HTML, CSS',
-      'Frameworks et Bibliothèques : Angular, React, Spring, Hibernate/JPA, Node.js, Express.js, Bootstrap, Thymeleaf',
-      'Bases de Données : SQL (MySQL, PostgreSQL), NoSQL (MongoDB)',
-      'Intégration / déploiement continue CI/CD : GitHub Actions, GitLab CI',
+      'Frameworks et bibliothèques : Angular, React, Spring, Hibernate/JPA, Node.js, Express.js, Bootstrap, Thymeleaf',
+      'Bases de données : SQL (MySQL, PostgreSQL), NoSQL (MongoDB), Vector Store',
+      'Intégration & déploiement continus (CI/CD) : GitHub Actions, GitLab CI',
       'Cloud & Infrastructures : AWS, VPS, virtualisation (VM), conteneurisation (Docker)',
-      'Outils et Environnements : Maven, Git/GitHub, IntelliJ, VSCode, Postman',
+      'Outils & environnements : Maven, Git/GitHub, IntelliJ IDEA, VS Code, Postman',
       'Documentation : Swagger/OpenAPI, JavaDoc',
-      'Concepts & Architecture : Microservices, API-REST, MVC, WebSocket, UML, programmation concurrente/asynchrone, SOLID, TDD, DDD, BDD',
-      'Sécurité & Qualité : Authentification & sécurité (JWT), Sonar, Quality Gate',
+      'Concepts & architecture : Microservices (Spring Cloud), API REST, MVC, WebSocket, UML, programmation concurrente/asynchrone, SOLID, TDD, DDD, BDD',
+      'Sécurité & qualité : Spring Security (JWT, OAuth2), Sonar, Quality Gate',
       'Tests : JUnit, Mockito, WireMock, MockMVC, Jest, Cypress',
-      'Méthodologies : Agile (Scrum/Kanban), DevOps'
+      'Méthodologies : Agile (Scrum/Kanban), DevOps',
+      'Intelligence artificielle (IA) & automatisation : Spring AI, LLM, RAG, Ollama, n8n'
     ]
   },
   {
@@ -328,8 +338,8 @@ export const experience: ExperienceType[] = [
       'Amix : Administrateur systèmes, réseaux et télécoms / Intégrateur logiciels métiers (médicaux/gestion).',
       'Fatech : Administrateur systèmes et réseaux.',
       'Medion : Technicien service d’assistance informatique.',
-      'Carrefour : Technicien SAV matériels informatique.'
-    ]
+      'Carrefour : Technicien SAV matériels informatique.',
+    ],
   },
 ];
 
