@@ -14,12 +14,14 @@ import {
 export const greetings: GreetingsType = {
   name: '<Maxime DROUAULT />',
   title: 'Développeur Java et Angular',
-  description: `
-  J’apporte une vision globale de l’IT, alliant expertise technique, rigueur et sens du concret.
-  Pédagogue et à l’aise avec tout type d’interlocuteur, je sais comprendre les besoins et les traduire en solutions performantes et durables.
-  Curieux et inventif, j’aime concevoir des applications fiables et utiles, en privilégiant la collaboration et la qualité.
-
-  Disponible dès à présent pour de nouvelles opportunités en développement, n’hésitez pas à me contacter.`,
+  description:
+    `Avec 18 ans d’expérience dans les environnements IT, j’apporte une vision globale, alliant expertise technique, rigueur et sens du concret.
+    
+    Pédagogue et à l’aise avec tout type d’interlocuteur, je sais vulgariser, comprendre les besoins et les traduire en solutions performantes et durables.
+    
+    Curieux et inventif, j’aime concevoir des applications fiables et utiles, en privilégiant la collaboration et la qualité.
+    
+    Disponible dès à présent pour de nouvelles opportunités en développement, n’hésitez pas à me contacter.`,
   resumeLink: 'CV - Maxime_DROUAULT - Développeur_Java_et_Angular - 18_ans_XP_IT.pdf',
 };
 
