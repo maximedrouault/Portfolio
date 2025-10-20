@@ -302,12 +302,12 @@ export const experience: ExperienceType[] = [
     company: '',
     companyLogo: 'img/icons/common/experiences-logo.png',
     date: `2022 – Aujourd'hui`,
-    desc: `
-    • Développement en cours d’une application assistée par l’IA destinée aux parents séparés.
-    • Développement en cours d’un chatbot pour mon portfolio, présentant mon parcours et mes centres d’intérêt.
+    desc:
+      `• Développement en cours d’une application assistée par l’IA destinée aux parents séparés.
+      • Développement en cours d’un chatbot pour mon portfolio, présentant mon parcours et mes centres d’intérêt.
+      • Conduite et réalisation de trente projets professionnels en conditions réelles ou reconstituées.
     
-    Conduite et réalisation de trente projets professionnels en conditions réelles ou reconstituées mettant en application concrète les technologies et compétences suivantes :
-    `,
+    Compétences clés maîtrisées :`,
     descBullets: [
       'Langages : Java, JavaScript, TypeScript, HTML, CSS',
       'Frameworks et bibliothèques : Angular, React, Spring, Hibernate/JPA, Node.js, Express.js, Bootstrap, Thymeleaf',
@@ -330,8 +330,8 @@ export const experience: ExperienceType[] = [
     date: '2000 – 2017',
     desc: 'Missions diverses :',
     descBullets: [
-      'Serveurcom : Responsable support technique revendeur (réseaux et télécoms N2/N3).',
-      'Amix : Administrateur systèmes, réseaux et télécoms / Intégrateur logiciels métiers (médicaux/gestion).',
+      'Serveurcom : Responsable support technique revendeur – Réseaux et télécoms N2/N3.',
+      'Amix : Administrateur systèmes, réseaux et télécoms / Intégrateur logiciels métiers (médicaux/gestions).',
       'Fatech : Administrateur systèmes et réseaux.',
       'Medion : Technicien service d’assistance informatique.',
       'Carrefour : Technicien SAV matériels informatique.',
