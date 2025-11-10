@@ -27,9 +27,9 @@ function SEO() {
       <meta name="robots" content="Index" />
       <link rel="manifest" href="/manifest.json" />
       {/* Favicon */}
-      <link rel="apple-touch-icon" sizes="120x120" href="./favicon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
+      <link rel="apple-touch-icon" sizes="120x120" href="/favicon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
     </Head>
   );
 }

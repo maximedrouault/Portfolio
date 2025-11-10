@@ -9,7 +9,6 @@ import {
   CardBody,
   FormGroup,
   Input,
-  InputGroupAddon,
   InputGroupText,
   InputGroup,
   Container,
@@ -28,13 +27,14 @@ export const ContactUs = () => {
   const successAlert = {
     color: 'success',
     icon: 'ni ni-like-2',
-    message: '  Votre message a été envoyé avec succès !'
+    message: '  Votre message a été envoyé avec succès !',
   };
 
   const errorAlert = {
     color: 'danger',
     icon: 'ni ni-bell-55',
-    message: "  Oops! Quelque chose s'est mal passé. Veuillez réessayer plus tard ou prendre contact directement à : MAXIMEDROUAULT@GMAIL.COM"
+    message:
+      "  Oops! Quelque chose s'est mal passé. Veuillez réessayer plus tard ou prendre contact directement à : MAXIMEDROUAULT@GMAIL.COM",
   };
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -97,11 +97,9 @@ export const ContactUs = () => {
                     </p>
                     <FormGroup className={classnames('mt-5', {})}>
                       <InputGroup className="input-group-alternative">
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="ni ni-user-run" />
-                          </InputGroupText>
-                        </InputGroupAddon>
+                        <InputGroupText>
+                          <i className="ni ni-user-run" />
+                        </InputGroupText>
                         <Input
                           placeholder="Votre nom"
                           type="text"
@@ -113,11 +111,9 @@ export const ContactUs = () => {
                     </FormGroup>
                     <FormGroup className={classnames({})}>
                       <InputGroup className="input-group-alternative">
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="ni ni-email-83" />
-                          </InputGroupText>
-                        </InputGroupAddon>
+                        <InputGroupText>
+                          <i className="ni ni-email-83" />
+                        </InputGroupText>
                         <Input
                           placeholder="Votre adresse E-Mail"
                           name="user_email"

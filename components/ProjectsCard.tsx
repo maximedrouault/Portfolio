@@ -2,9 +2,14 @@ import React from 'react';
 import { Card, CardBody, Col, Button } from 'reactstrap';
 import Fade from 'react-reveal/Fade';
 import { ProjectType } from '../types/sections';
-import { projects } from '../portfolio';
 
-const ProjectsCard = ({ name, desc, github, link, projectsImg }: ProjectType) => {
+const ProjectsCard = ({
+  name,
+  desc,
+  github,
+  link,
+  projectsImg,
+}: ProjectType) => {
   return (
     <Col lg="6">
       <Fade bottom duration={2000}>
@@ -13,9 +18,12 @@ const ProjectsCard = ({ name, desc, github, link, projectsImg }: ProjectType) =>
             <div className="d-flex px-3">
               <div className="pl-4">
                 <a href={link} target="_blank" rel="noopener noreferrer">
-                  <img src={projectsImg} alt={"Photo de présentation du site web " + name} />
+                  <img
+                    src={projectsImg}
+                    alt={'Photo de présentation du site web ' + name}
+                  />
                 </a>
-                <h3 className='mt-3'>{name}</h3>
+                <h3 className="mt-3">{name}</h3>
                 <p className="description mt-3">{desc}</p>
                 {github ? (
                   <Button

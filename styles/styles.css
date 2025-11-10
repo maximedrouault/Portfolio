@@ -1,4 +1,59 @@
-body>div:first-child {
-    overflow-x: hidden;
-    white-space: pre-line;
+body > div:first-child {
+  overflow-x: hidden;
+  white-space: pre-line;
+}
+
+.nav-title {
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-main {
+  display: flex !important;
+  flex-wrap: wrap;
+}
+
+.navbar-main > .container-fluid {
+  display: flex !important;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  align-items: center;
+}
+
+.navbar-main > .container-fluid > .container {
+  display: flex !important;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.navbar-brand {
+  flex-shrink: 0;
+  order: 1;
+}
+
+.navbar-toggler {
+  order: 2;
+}
+
+.navbar-collapse {
+  order: 3;
+  flex-basis: auto !important;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    align-items: center;
+    width: auto;
+  }
+
+  .navbar-main > .container-fluid > .container {
+    flex-wrap: nowrap !important;
+  }
 }

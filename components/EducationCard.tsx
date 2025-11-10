@@ -18,7 +18,7 @@ const EducationCard = ({
           <div className="d-flex px-3">
             <div className="pl-4">
               <h3 className="text-info">{schoolName}</h3>
-              <h6 >{subHeader}</h6>
+              <h6>{subHeader}</h6>
               <Badge color="info" className="mr-1">
                 {duration}
               </Badge>
@@ -31,8 +31,8 @@ const EducationCard = ({
               <ul>
                 {descBullets
                   ? descBullets.map((desc) => {
-                    return <li key={desc}>{desc}</li>;
-                  })
+                      return <li key={desc}>{desc}</li>;
+                    })
                   : null}
               </ul>
             </div>

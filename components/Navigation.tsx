@@ -11,7 +11,6 @@ import {
   Container,
   Row,
   Col,
-  Button,
 } from 'reactstrap';
 import { Icon } from '@iconify/react';
 
@@ -27,13 +26,16 @@ const Navigation = () => {
     headroom.init();
   });
 
-
-
   return (
     <>
       <header className="header-global">
         <a href="#" id="backToTop" title="Remonter en haut de la page">
-          <Icon icon="material-symbols:arrow-circle-up-rounded" color="black" width="50" height="50" />
+          <Icon
+            icon="material-symbols:arrow-circle-up-rounded"
+            color="black"
+            width="50"
+            height="50"
+          />
         </a>
         <Navbar
           className="navbar-main navbar-transparent navbar-light headroom"
@@ -42,9 +44,7 @@ const Navigation = () => {
         >
           <Container>
             <NavbarBrand href="/" className="mr-lg-5">
-              <h1 className="text-white nav-title">
-                {greetings.name}
-              </h1>
+              <h1 className="text-white nav-title">{greetings.name}</h1>
             </NavbarBrand>
             <button
               className="navbar-toggler"
@@ -63,9 +63,7 @@ const Navigation = () => {
               <div className="navbar-collapse-header">
                 <Row>
                   <Col className="collapse-brand" xs="10">
-                    <h3 className="text-black nav-title">
-                      {greetings.name}
-                    </h3>
+                    <h3 className="text-black nav-title">{greetings.name}</h3>
                   </Col>
                   <Col className="collapse-close" xs="2">
                     <button className="navbar-toggler" id="navbar_global">
@@ -81,7 +79,7 @@ const Navigation = () => {
                     rel="noopener"
                     aria-label="Mes compétences"
                     className="nav-link-icon"
-                    href={"#skills"}
+                    href={'#skills'}
                   >
                     Compétences
                   </NavLink>
@@ -91,7 +89,7 @@ const Navigation = () => {
                     rel="noopener"
                     aria-label="Mes formations"
                     className="nav-link-icon"
-                    href={"#educations"}
+                    href={'#educations'}
                   >
                     Formations
                   </NavLink>
@@ -101,7 +99,7 @@ const Navigation = () => {
                     rel="noopener"
                     aria-label="Mes expériences"
                     className="nav-link-icon"
-                    href={"#experiences"}
+                    href={'#experiences'}
                   >
                     Expériences
                   </NavLink>
@@ -111,7 +109,7 @@ const Navigation = () => {
                     rel="noopener"
                     aria-label="Références"
                     className="nav-link-icon"
-                    href={"#feedback"}
+                    href={'#feedback'}
                   >
                     Références
                   </NavLink>
@@ -121,7 +119,7 @@ const Navigation = () => {
                     rel="noopener"
                     aria-label="Mes projets"
                     className="nav-link-icon"
-                    href={"#projects"}
+                    href={'#projects'}
                   >
                     Projets
                   </NavLink>
@@ -131,8 +129,8 @@ const Navigation = () => {
                     rel="noopener"
                     aria-label="Contactez-moi"
                     className="nav-link-icon"
-                    href={"#contact-me"}
-                    style={{ fontWeight: "bold" }}
+                    href={'#contact-me'}
+                    style={{ fontWeight: 'bold' }}
                   >
                     Contactez-moi !
                   </NavLink>
