@@ -33,27 +33,29 @@ const Greetings = () => {
                     {greetings.title + ' '}
                   </h2>
                   <p className="lead text-white">{greetings.description}</p>
-                  <SocialLinks />
-                  {greetings.resumeLink && (
-                    <div className="btn-wrapper my-4">
-                      <Button
-                        className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
-                        color="default"
-                        href={greetings.resumeLink}
-                        target="_blank"
-                      >
-                        <span className="btn-inner--icon mr-1">
-                          <i className="fa fa-file" />
-                        </span>
-                        <span
-                          className="btn-inner--text"
-                          aria-label="Lien vers le fichier PDF externe de mon C.V."
+                  <div className="d-flex flex-wrap align-items-center mt-4">
+                    <SocialLinks />
+                    {greetings.resumeLink && (
+                      <div className="btn-wrapper ml-3">
+                        <Button
+                          className="btn-white btn-icon ml-1"
+                          color="default"
+                          href={greetings.resumeLink}
+                          target="_blank"
                         >
-                          Voir mon C.V.
-                        </span>
-                      </Button>
-                    </div>
-                  )}
+                          <span className="btn-inner--icon mr-1">
+                            <i className="fa fa-file" />
+                          </span>
+                          <span
+                            className="btn-inner--text"
+                            aria-label="Lien vers le fichier PDF externe de mon C.V."
+                          >
+                            Voir mon C.V.
+                          </span>
+                        </Button>
+                      </div>
+                    )}
+                  </div>
                 </Col>
                 <Col lg="5">
                   <GreetingLottie animationPath="/lottie/coding.json" />
