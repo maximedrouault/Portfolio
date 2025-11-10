@@ -20,6 +20,13 @@ const Navigation = () => {
 
   const onExited = () => setCollapseClasses('');
 
+  const closeMenu = () => {
+    const toggler = document.getElementById('navbar_global');
+    if (toggler) {
+      toggler.click();
+    }
+  };
+
   useEffect(() => {
     let headroom = new Headroom(document.getElementById('navbar-main')!);
     // initialise
@@ -80,6 +87,7 @@ const Navigation = () => {
                     aria-label="Mes compétences"
                     className="nav-link-icon"
                     href={'#skills'}
+                    onClick={closeMenu}
                   >
                     Compétences
                   </NavLink>
@@ -90,6 +98,7 @@ const Navigation = () => {
                     aria-label="Mes formations"
                     className="nav-link-icon"
                     href={'#educations'}
+                    onClick={closeMenu}
                   >
                     Formations
                   </NavLink>
@@ -100,6 +109,7 @@ const Navigation = () => {
                     aria-label="Mes expériences"
                     className="nav-link-icon"
                     href={'#experiences'}
+                    onClick={closeMenu}
                   >
                     Expériences
                   </NavLink>
@@ -110,6 +120,7 @@ const Navigation = () => {
                     aria-label="Références"
                     className="nav-link-icon"
                     href={'#feedback'}
+                    onClick={closeMenu}
                   >
                     Références
                   </NavLink>
@@ -120,6 +131,7 @@ const Navigation = () => {
                     aria-label="Mes projets"
                     className="nav-link-icon"
                     href={'#projects'}
+                    onClick={closeMenu}
                   >
                     Projets
                   </NavLink>
@@ -131,6 +143,7 @@ const Navigation = () => {
                     className="nav-link-icon"
                     href={'#contact-me'}
                     style={{ fontWeight: 'bold' }}
+                    onClick={closeMenu}
                   >
                     Contactez-moi !
                   </NavLink>
