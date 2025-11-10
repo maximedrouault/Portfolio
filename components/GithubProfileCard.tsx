@@ -26,11 +26,15 @@ const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
                 Ma boîte e-mail est ouverte
               </h3>
               <p className="text-white mt-3">{bio}</p>
-              <div className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
-                <i className="ni ni-pin-3 text-info mr-2" />
-                {location}
+              <div className="d-flex flex-wrap align-items-center mt-4">
+                <div className="mr-3">
+                  <SocialLinks />
+                </div>
+                <div className="icon-shape bg-gradient-white shadow rounded text-info">
+                  <i className="ni ni-pin-3 text-info mr-2" />
+                  {location}
+                </div>
               </div>
-              <SocialLinks />
             </Col>
           </Row>
         </div>
