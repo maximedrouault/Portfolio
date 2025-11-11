@@ -49,7 +49,7 @@ const Navigation = () => {
           expand="lg"
           id="navbar-main"
         >
-          <Container>
+          <Container className="justify-content-between">
             <NavbarBrand href="/" className="mr-lg-5">
               <h1 className="text-white nav-title">{greetings.name}</h1>
             </NavbarBrand>
@@ -68,11 +68,11 @@ const Navigation = () => {
               onExited={onExited}
             >
               <div className="navbar-collapse-header">
-                <Row>
-                  <Col className="collapse-brand" xs="10">
+                <Row className="justify-content-between">
+                  <Col className="collapse-brand" xs="auto">
                     <h3 className="text-black nav-title">{greetings.name}</h3>
                   </Col>
-                  <Col className="collapse-close" xs="2">
+                  <Col className="collapse-close align-content-center" xs="auto">
                     <button className="navbar-toggler" id="navbar_global">
                       <span />
                       <span />
