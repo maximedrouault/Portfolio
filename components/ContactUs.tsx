@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
 import classnames from 'classnames';
 import Alert from './Alerts';
 
@@ -37,41 +36,38 @@ export const ContactUs = () => {
       "  Oops! Quelque chose s'est mal passé. Veuillez réessayer plus tard ou prendre contact directement à : MAXIMEDROUAULT@GMAIL.COM",
   };
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('submitting');
 
-    console.log(form.current);
+    if (!form.current) return;
 
-    const emailJsServiceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    try {
+      const formData = new FormData(form.current);
+      const data = {
+        user_name: formData.get('user_name'),
+        user_email: formData.get('user_email'),
+        user_message: formData.get('user_message'),
+      };
 
-    const emailJsTemplateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
 
-    const emailJsPublicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+      const result = await response.json();
 
-    if (
-      emailJsServiceId &&
-      emailJsTemplateId &&
-      emailJsPublicKey &&
-      form.current
-    ) {
-      emailjs
-        .sendForm(
-          emailJsServiceId,
-          emailJsTemplateId,
-          form.current,
-          emailJsPublicKey
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            setAlert(successAlert);
-          },
-          (error) => {
-            console.log(error.text);
-            setAlert(errorAlert);
-          }
-        );
+      if (result.success) {
+        setAlert(successAlert);
+        form.current.reset();
+      } else {
+        setAlert(errorAlert);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setAlert(errorAlert);
     }
   };
 
