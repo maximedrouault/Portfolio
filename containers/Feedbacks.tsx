@@ -19,9 +19,9 @@ const Feedbacks = () => {
             </div>
           </div>
           <Row className="row-grid align-items-center">
-            {feedbacks.map((data, i) => {
+            {feedbacks.map((data) => {
               return (
-                <Col key={i} lg={6}>
+                <Col key={data.name} lg={6}>
                   <FeedbackCard {...data} />
                 </Col>
               );

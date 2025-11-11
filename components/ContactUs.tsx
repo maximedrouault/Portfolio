@@ -72,84 +72,82 @@ export const ContactUs = () => {
   };
 
   return (
-    <>
-      <section className="section section-lg section-shaped" id="contact-me">
-        <form ref={form} onSubmit={sendEmail}>
-          {alert && (
-            <Alert
-              color={alert.color}
-              icon={alert.icon}
-              message={alert.message}
-            />
-          )}
-          <Container>
-            <Row className="justify-content-center">
-              <Col lg="8">
-                <Card className="bg-gradient-secondary shadow">
-                  <CardBody className="p-lg-5">
-                    <h4 className="mb-1">Vous voulez travailler avec moi ?</h4>
-                    <p className="mt-0">
-                      Contactez-moi en utilisant le formulaire ci-dessous.
-                    </p>
-                    <FormGroup className={classnames('mt-5', {})}>
-                      <InputGroup className="input-group-alternative">
-                        <InputGroupText>
-                          <i className="ni ni-user-run" />
-                        </InputGroupText>
-                        <Input
-                          placeholder="Votre nom"
-                          type="text"
-                          name="user_name"
-                          required={true}
-                          aria-label="Votre nom"
-                        />
-                      </InputGroup>
-                    </FormGroup>
-                    <FormGroup className={classnames({})}>
-                      <InputGroup className="input-group-alternative">
-                        <InputGroupText>
-                          <i className="ni ni-email-83" />
-                        </InputGroupText>
-                        <Input
-                          placeholder="Votre adresse E-Mail"
-                          name="user_email"
-                          type="email"
-                          required={true}
-                          aria-label="Votre adresse E-Mail"
-                        />
-                      </InputGroup>
-                    </FormGroup>
-                    <FormGroup className="mb-4">
+    <section className="section section-lg section-shaped" id="contact-me">
+      <form ref={form} onSubmit={sendEmail}>
+        {alert && (
+          <Alert
+            color={alert.color}
+            icon={alert.icon}
+            message={alert.message}
+          />
+        )}
+        <Container>
+          <Row className="justify-content-center">
+            <Col lg="8">
+              <Card className="bg-gradient-secondary shadow">
+                <CardBody className="p-lg-5">
+                  <h4 className="mb-1">Vous voulez travailler avec moi ?</h4>
+                  <p className="mt-0">
+                    Contactez-moi en utilisant le formulaire ci-dessous.
+                  </p>
+                  <FormGroup className={classnames('mt-5', {})}>
+                    <InputGroup className="input-group-alternative">
+                      <InputGroupText>
+                        <i className="ni ni-user-run" />
+                      </InputGroupText>
                       <Input
-                        className="form-control-alternative"
-                        cols="80"
-                        name="user_message"
-                        placeholder="Votre message..."
-                        rows="4"
-                        type="textarea"
+                        placeholder="Votre nom"
+                        type="text"
+                        name="user_name"
                         required={true}
-                        aria-label="Votre message"
+                        aria-label="Votre nom"
                       />
-                    </FormGroup>
-                    <div>
-                      <Button
-                        block
-                        className="btn-round"
-                        color="default"
-                        size="lg"
-                        type="submit"
-                      >
-                        Envoyez votre message
-                      </Button>
-                    </div>
-                  </CardBody>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        </form>
-      </section>
-    </>
+                    </InputGroup>
+                  </FormGroup>
+                  <FormGroup className={classnames({})}>
+                    <InputGroup className="input-group-alternative">
+                      <InputGroupText>
+                        <i className="ni ni-email-83" />
+                      </InputGroupText>
+                      <Input
+                        placeholder="Votre adresse E-Mail"
+                        name="user_email"
+                        type="email"
+                        required={true}
+                        aria-label="Votre adresse E-Mail"
+                      />
+                    </InputGroup>
+                  </FormGroup>
+                  <FormGroup className="mb-4">
+                    <Input
+                      className="form-control-alternative"
+                      cols="80"
+                      name="user_message"
+                      placeholder="Votre message..."
+                      rows="4"
+                      type="textarea"
+                      required={true}
+                      aria-label="Votre message"
+                    />
+                  </FormGroup>
+                  <div>
+                    <Button
+                      block
+                      className="btn-round"
+                      color="default"
+                      size="lg"
+                      type="submit"
+                    >
+                      Envoyez votre message
+                    </Button>
+                  </div>
+                </CardBody>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </form>
+    </section>
   );
 };
 

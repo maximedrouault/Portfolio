@@ -11,9 +11,9 @@ const Skills = () => {
       <Container className="text-center my-5 section section-lg" id="skills">
         <h1 className="h1">{skillsSection.title}</h1>
         <p className="lead">{skillsSection.subTitle}</p>
-        {skillsSection.data.map((section, index) => {
+        {skillsSection.data.map((section) => {
           return (
-            <Row className="my-5 align-items-center" key={index}>
+            <Row className="my-5 align-items-center" key={section.title}>
               <Col lg="6" className="order-2 order-lg-1">
                 <Fade left duration={2000}>
                   <DisplayLottie animationPath={section.lottieAnimationFile} />
@@ -23,12 +23,12 @@ const Skills = () => {
                 <Fade right duration={2000}>
                   <h2 className="h3 mb-2">{section.title}</h2>
                   <div className="d-flex justify-content-center flex-wrap mb-2">
-                    {section.softwareSkills.map((skill, i) => {
+                    {section.softwareSkills.map((skill) => {
                       return (
-                        <Fragment key={i}>
+                        <Fragment key={skill.skillName}>
                           <div
                             className="icon icon-lg icon-shape shadow-sm rounded-circle m-1"
-                            id={skill.skillName.replace(/\s/g, '')}
+                            id={skill.skillName.replaceAll(/\s/g, '')}
                           >
                             <Icon
                               icon={skill.fontAwesomeClassName}
@@ -38,7 +38,7 @@ const Skills = () => {
                           <UncontrolledTooltip
                             delay={0}
                             placement="bottom"
-                            target={skill.skillName.replace(/\s/g, '')}
+                            target={skill.skillName.replaceAll(/\s/g, '')}
                           >
                             {skill.skillName}
                           </UncontrolledTooltip>
@@ -47,8 +47,10 @@ const Skills = () => {
                     })}
                   </div>
                   <div>
-                    {section.skills.map((skill, i) => {
-                      return <p key={i}>{skill}</p>;
+                    {section.skills.map((skill, index) => {
+                      return (
+                        <p key={`${section.title}-skill-${index}`}>{skill}</p>
+                      );
                     })}
                   </div>
                 </Fade>

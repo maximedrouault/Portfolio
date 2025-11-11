@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { seoData } from '../portfolio';
 
-function SEO() {
+const SEO: React.FC = () => {
   return (
     <Head>
       <title>{seoData.title}</title>
@@ -32,17 +32,6 @@ function SEO() {
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
     </Head>
   );
-}
-
-// SEO.prototype = {
-//   data: PropTypes.shape({
-//     title: PropTypes.string.isRequired,
-//     author: PropTypes.string,
-//     description: PropTypes.string,
-//     image: PropTypes.string,
-//     url: PropTypes.string,
-//     keywords: PropTypes.arrayOf(PropTypes.string),
-//   }).isRequired,
-// };
+};
 
 export default SEO;

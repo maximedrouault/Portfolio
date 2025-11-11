@@ -19,8 +19,13 @@ const Experience = () => {
             </div>
           </div>
           <Row className="row-grid align-items-start">
-            {experience.map((data, i) => {
-              return <ExperienceCard key={i} {...data} />;
+            {experience.map((data) => {
+              return (
+                <ExperienceCard
+                  key={`${data.company}-${data.role}-${data.date}`}
+                  {...data}
+                />
+              );
             })}
           </Row>
         </Container>

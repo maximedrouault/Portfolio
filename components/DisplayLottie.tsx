@@ -13,7 +13,7 @@ const GreetingLottie = ({ animationPath }: Props) => {
   };
 
   return (
-    <div onClick={() => null}>
+    <div>
       {/* @ts-ignore */}
       <Lottie options={defaultOptions} />
     </div>

@@ -11,18 +11,18 @@ const GithubProfileCard = dynamic(
   () => import('../components/GithubProfileCard')
 );
 import { openSource, showContactUs } from '../portfolio';
-import SEO from '../components/SEO';
+import Seo from '../components/SEO';
 import Contact from '../components/ContactUs';
 import { GithubUserType } from '../types';
 
 export default function Home({
   githubProfileData,
-}: {
+}: Readonly<{
   githubProfileData: any;
-}) {
+}>) {
   return (
     <div>
-      <SEO />
+      <Seo />
       <Navigation />
       <Greetings />
       <Skills />
@@ -36,10 +36,6 @@ export default function Home({
     </div>
   );
 }
-
-// Home.prototype = {
-//   githubProfileData: PropTypes.object.isRequired,
-// };
 
 export async function getStaticProps() {
   const githubProfileData: GithubUserType = await fetch(
