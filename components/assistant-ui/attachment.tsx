@@ -70,7 +70,7 @@ const AttachmentPreview: FC<AttachmentPreviewProps> = ({ src }) => {
   return (
     <Image
       src={src}
-      alt="Image Preview"
+      alt="Aperçu de l'image"
       width={1}
       height={1}
       className={
@@ -96,7 +96,7 @@ const AttachmentPreviewDialog: FC<PropsWithChildren> = ({ children }) => {
       </DialogTrigger>
       <DialogContent className="aui-attachment-preview-dialog-content">
         <DialogTitle className="aui-sr-only">
-          Image Attachment Preview
+          Aperçu de la pièce jointe
         </DialogTitle>
         <div className="aui-attachment-preview">
           <AttachmentPreview src={src} />
@@ -116,7 +116,7 @@ const AttachmentThumb: FC = () => {
     <Avatar className="aui-attachment-tile-avatar">
       <AvatarImage
         src={src}
-        alt="Attachment preview"
+        alt="Aperçu de la pièce jointe"
         className="aui-attachment-tile-image"
       />
       <AvatarFallback delayMs={isImage ? 200 : 0}>
@@ -141,7 +141,7 @@ const AttachmentUI: FC = () => {
       case "document":
         return "Document";
       case "file":
-        return "File";
+        return "Fichier";
       default:
         const _exhaustiveCheck: never = type;
         throw new Error(`Unknown attachment type: ${_exhaustiveCheck}`);
@@ -165,7 +165,7 @@ const AttachmentUI: FC = () => {
               )}
               role="button"
               id="attachment-tile"
-              aria-label={`${typeLabel} attachment`}
+              aria-label={`Pièce jointe : ${typeLabel}`}
             >
               <AttachmentThumb />
             </div>
@@ -184,7 +184,7 @@ const AttachmentRemove: FC = () => {
   return (
     <AttachmentPrimitive.Remove asChild>
       <TooltipIconButton
-        tooltip="Remove file"
+        tooltip="Supprimer le fichier"
         className="aui-attachment-tile-remove"
         side="top"
       >
@@ -216,12 +216,12 @@ export const ComposerAddAttachment: FC = () => {
   return (
     <ComposerPrimitive.AddAttachment asChild>
       <TooltipIconButton
-        tooltip="Add Attachment"
+        tooltip="Ajouter une pièce jointe"
         side="bottom"
         variant="ghost"
         size="icon"
         className="aui-composer-add-attachment"
-        aria-label="Add Attachment"
+        aria-label="Ajouter une pièce jointe"
       >
         <PlusIcon className="aui-attachment-add-icon" />
       </TooltipIconButton>

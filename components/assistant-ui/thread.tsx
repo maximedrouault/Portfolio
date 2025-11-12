@@ -74,7 +74,7 @@ const ThreadScrollToBottom: FC = () => {
   return (
     <ThreadPrimitive.ScrollToBottom asChild>
       <TooltipIconButton
-        tooltip="Scroll to bottom"
+        tooltip="Faire défiler vers le bas"
         variant="outline"
         className="aui-thread-scroll-to-bottom"
       >
@@ -95,7 +95,7 @@ const ThreadWelcome: FC = () => {
             exit={{ opacity: 0, y: 10 }}
             className="aui-thread-welcome-message-motion-1"
           >
-            Hello there!
+            Bonjour et bienvenue !👋
           </m.div>
           <m.div
             initial={{ opacity: 0, y: 10 }}
@@ -104,7 +104,7 @@ const ThreadWelcome: FC = () => {
             transition={{ delay: 0.1 }}
             className="aui-thread-welcome-message-motion-2"
           >
-            How can I help you today?
+            Que voulez-vous découvrir sur Maxime ?
           </m.div>
         </div>
       </div>
@@ -118,24 +118,24 @@ const ThreadSuggestions: FC = () => {
     <div className="aui-thread-welcome-suggestions">
       {[
         {
-          title: "What's the weather",
-          label: "in San Francisco?",
-          action: "What's the weather in San Francisco?",
+          title: "Parle-moi de",
+          label: "ses compétences techniques",
+          action: "Quelles sont les compétences techniques principales et l'expertise en développement de Maxime ?",
         },
         {
-          title: "Explain React hooks",
-          label: "like useState and useEffect",
-          action: "Explain React hooks like useState and useEffect",
+          title: "Parle-moi de",
+          label: "ses savoir-être",
+          action: "Quels sont les savoir-être, qualités professionnelles et atouts personnels de Maxime ?",
         },
         {
-          title: "Write a SQL query",
-          label: "to find top customers",
-          action: "Write a SQL query to find top customers",
+          title: "Parle-moi de",
+          label: "ses projets marquants",
+          action: "Quels sont les projets les plus significatifs et réalisations principales de Maxime ?",
         },
         {
-          title: "Create a meal plan",
-          label: "for healthy weight loss",
-          action: "Create a meal plan for healthy weight loss",
+          title: "Comment",
+          label: "contacter Maxime ?",
+          action: "Comment puis-je contacter Maxime ou en savoir plus sur lui ?",
         },
       ].map((suggestedAction, index) => (
         <m.div
@@ -177,11 +177,11 @@ const Composer: FC = () => {
       <ComposerPrimitive.Root className="aui-composer-root">
         <ComposerAttachments />
         <ComposerPrimitive.Input
-          placeholder="Send a message..."
+          placeholder="Écrivez votre message..."
           className="aui-composer-input"
           rows={1}
           autoFocus
-          aria-label="Message input"
+          aria-label="Zone de saisie du message"
         />
         <ComposerAction />
       </ComposerPrimitive.Root>
@@ -191,19 +191,18 @@ const Composer: FC = () => {
 
 const ComposerAction: FC = () => {
   return (
-    <div className="aui-composer-action-wrapper">
-      <ComposerAddAttachment />
+    <div className="aui-composer-action-wrapper justify-content-end">
 
       <ThreadPrimitive.If running={false}>
         <ComposerPrimitive.Send asChild>
           <TooltipIconButton
-            tooltip="Send message"
+            tooltip="Envoyer le message"
             side="bottom"
             type="submit"
             variant="default"
             size="icon"
             className="aui-composer-send"
-            aria-label="Send message"
+            aria-label="Envoyer le message"
           >
             <ArrowUpIcon className="aui-composer-send-icon" />
           </TooltipIconButton>
@@ -217,7 +216,8 @@ const ComposerAction: FC = () => {
             variant="default"
             size="icon"
             className="aui-composer-cancel"
-            aria-label="Stop generating"
+            aria-label="Arrêter la génération"
+            title="Arrêter la génération"
           >
             <Square className="aui-composer-cancel-icon" />
           </Button>
@@ -272,7 +272,7 @@ const AssistantActionBar: FC = () => {
       className="aui-assistant-action-bar-root"
     >
       <ActionBarPrimitive.Copy asChild>
-        <TooltipIconButton tooltip="Copy">
+        <TooltipIconButton tooltip="Copier la réponse">
           <MessagePrimitive.If copied>
             <CheckIcon />
           </MessagePrimitive.If>
@@ -282,7 +282,7 @@ const AssistantActionBar: FC = () => {
         </TooltipIconButton>
       </ActionBarPrimitive.Copy>
       <ActionBarPrimitive.Reload asChild>
-        <TooltipIconButton tooltip="Refresh">
+        <TooltipIconButton tooltip="Régénérer la réponse">
           <RefreshCwIcon />
         </TooltipIconButton>
       </ActionBarPrimitive.Reload>
@@ -322,7 +322,7 @@ const UserActionBar: FC = () => {
       className="aui-user-action-bar-root"
     >
       <ActionBarPrimitive.Edit asChild>
-        <TooltipIconButton tooltip="Edit" className="aui-user-action-edit">
+        <TooltipIconButton tooltip="Modifier le message" className="aui-user-action-edit">
           <PencilIcon />
         </TooltipIconButton>
       </ActionBarPrimitive.Edit>
@@ -341,13 +341,13 @@ const EditComposer: FC = () => {
 
         <div className="aui-edit-composer-footer">
           <ComposerPrimitive.Cancel asChild>
-            <Button variant="ghost" size="default" aria-label="Cancel edit">
-              Cancel
+            <Button variant="ghost" size="default" aria-label="Annuler l'édition">
+              Annuler
             </Button>
           </ComposerPrimitive.Cancel>
           <ComposerPrimitive.Send asChild>
-            <Button size="default" aria-label="Update message">
-              Update
+            <Button size="default" aria-label="Mettre à jour le message">
+              Mettre à jour
             </Button>
           </ComposerPrimitive.Send>
         </div>
@@ -367,7 +367,7 @@ const BranchPicker: FC<BranchPickerPrimitive.Root.Props> = ({
       {...rest}
     >
       <BranchPickerPrimitive.Previous asChild>
-        <TooltipIconButton tooltip="Previous">
+        <TooltipIconButton tooltip="Réponse précédente">
           <ChevronLeftIcon />
         </TooltipIconButton>
       </BranchPickerPrimitive.Previous>
@@ -375,7 +375,7 @@ const BranchPicker: FC<BranchPickerPrimitive.Root.Props> = ({
         <BranchPickerPrimitive.Number /> / <BranchPickerPrimitive.Count />
       </span>
       <BranchPickerPrimitive.Next asChild>
-        <TooltipIconButton tooltip="Next">
+        <TooltipIconButton tooltip="Réponse suivante">
           <ChevronRightIcon />
         </TooltipIconButton>
       </BranchPickerPrimitive.Next>
