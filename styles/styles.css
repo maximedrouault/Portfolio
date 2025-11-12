@@ -73,3 +73,14 @@ body > div:first-child {
     flex-wrap: nowrap !important;
   }
 }
+
+/* Assistant modal positioning */
+.aui-modal-anchor {
+  position: fixed !important;
+  bottom: 5rem !important;
+  right: 1.25rem !important;
+  width: 50px !important;
+  height: 50px !important;
+  cursor: pointer !important;
+  z-index: 50 !important;
+}
