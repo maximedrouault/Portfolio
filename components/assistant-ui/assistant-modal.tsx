@@ -10,7 +10,7 @@ import { TooltipIconButton } from "@/components/assistant-ui/tooltip-icon-button
 
 export const AssistantModal: FC = () => {
   return (
-    <AssistantModalPrimitive.Root>
+    <AssistantModalPrimitive.Root defaultOpen={true}>
       <AssistantModalPrimitive.Anchor className="aui-root aui-modal-anchor">
         <AssistantModalPrimitive.Trigger asChild>
           <AssistantModalButton />

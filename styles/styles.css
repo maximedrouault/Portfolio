@@ -1,5 +1,11 @@
 body > div:first-child {
   overflow-x: hidden;
+}
+
+/* Apply white-space: pre-line only to elements that need multi-line preservation */
+.description,
+main .lead,
+#skills p {
   white-space: pre-line;
 }
 
@@ -83,4 +89,14 @@ body > div:first-child {
   height: 50px !important;
   cursor: pointer !important;
   z-index: 50 !important;
+}
+
+.aui-modal-anchor,
+.aui-modal-content {
+  pointer-events: auto !important;
+}
+
+/* Empêcher le modal d'affecter le scrollbar du body */
+body {
+  scrollbar-gutter: stable;
 }
