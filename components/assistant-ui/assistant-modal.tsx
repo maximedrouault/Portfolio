@@ -2,14 +2,23 @@
 
 import { BotIcon, ChevronDownIcon } from "lucide-react";
 
-import { type FC, forwardRef, useState } from "react";
+import { type FC, forwardRef, useState, useEffect } from "react";
 import { AssistantModalPrimitive } from "@assistant-ui/react";
 
 import { Thread } from "@/components/assistant-ui/thread";
 import { TooltipIconButton } from "@/components/assistant-ui/tooltip-icon-button";
 
 export const AssistantModal: FC = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Open the chatbot modal automatically after 5 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <AssistantModalPrimitive.Root
