@@ -1,104 +1,107 @@
 body > div:first-child {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 /* Apply white-space: pre-line only to elements that need multi-line preservation */
 .description,
 main .lead,
 #skills p {
-  white-space: pre-line;
+    white-space: pre-line;
 }
 
 .nav-title {
-  margin: 0 !important;
-  display: flex;
-  align-items: center;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
 }
 
 .collapse-brand .nav-title {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 @media (max-width: 991.98px) {
-  .navbar-collapse .navbar-nav .nav-link {
-    font-size: 1.1rem !important;
-    padding: 0.75rem 0 !important;
-  }
+    .navbar-collapse .navbar-nav .nav-link {
+        font-size: 1.1rem !important;
+        padding: 0.75rem 0 !important;
+    }
 }
 
 .navbar-main {
-  display: flex !important;
-  flex-wrap: wrap;
+    display: flex !important;
+    flex-wrap: wrap;
 }
 
 .navbar-main > .container-fluid {
-  display: flex !important;
-  width: 100%;
-  padding-right: 0;
-  padding-left: 0;
-  align-items: center;
+    display: flex !important;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    align-items: center;
 }
 
 .navbar-main > .container-fluid > .container {
-  display: flex !important;
-  flex-wrap: nowrap;
-  align-items: center;
-  width: 100%;
-  max-width: 100%;
+    display: flex !important;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
 }
 
 .navbar-brand {
-  flex-shrink: 0;
-  order: 1;
+    flex-shrink: 0;
+    order: 1;
 }
 
 .navbar-toggler {
-  order: 2;
-  display: block !important;
+    order: 2;
+    display: block !important;
 }
 
 .navbar-collapse {
-  order: 3;
-  flex-basis: auto !important;
+    order: 3;
+    flex-basis: auto !important;
 }
 
 @media (min-width: 992px) {
-  .navbar-toggler {
-    display: none !important;
-  }
+    .navbar-toggler {
+        display: none !important;
+    }
 
-  .navbar-expand-lg .navbar-collapse {
-    display: flex !important;
-    flex-wrap: nowrap;
-    flex-grow: 1;
-    align-items: center;
-    width: auto;
-  }
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        align-items: center;
+        width: auto;
+    }
 
-  .navbar-main > .container-fluid > .container {
-    flex-wrap: nowrap !important;
-  }
+    .navbar-main > .container-fluid > .container {
+        flex-wrap: nowrap !important;
+    }
 }
+
+/* Prevent the modal from affecting the body's scrollbar */
+body {
+    scrollbar-gutter: stable;
+}
+
+
+/* Chatbot rules */
 
 /* Assistant modal positioning */
 .aui-modal-anchor {
-  position: fixed !important;
-  bottom: 1.25rem !important;
-  right: 1.25rem !important;
-  width: 50px !important;
-  height: 50px !important;
-  cursor: pointer !important;
-  z-index: 50 !important;
+    position: fixed !important;
+    bottom: 1.25rem !important;
+    right: 1.25rem !important;
+    width: 50px !important;
+    height: 50px !important;
+    cursor: pointer !important;
+    z-index: 50 !important;
 }
 
 .aui-modal-anchor,
 .aui-modal-content {
-  pointer-events: auto !important;
-}
-
-/* Empêcher le modal d'affecter le scrollbar du body */
-body {
-  scrollbar-gutter: stable;
+    pointer-events: auto !important;
 }
 
 .aui-modal-button-icon {
@@ -106,3 +109,63 @@ body {
     height: 30px !important;
 }
 
+.aui-composer-root {
+    flex-direction: row !important;
+}
+
+/* Assistant modal content sizing */
+.aui-modal-content {
+    width: 35vw !important;
+    height: 75vh !important;
+}
+
+@media (max-width: 1024px) {
+    .aui-modal-content {
+        width: 75vw !important;
+        height: 70vh !important;
+    }
+}
+
+/* Mobile: tablet and smaller */
+@media (max-width: 768px) {
+    .aui-modal-content {
+        width: 80vw !important;
+        height: 75vh !important;
+    }
+}
+
+/* Mobile: small phones */
+@media (max-width: 480px) {
+    .aui-modal-content {
+        width: 90vw !important;
+        height: 75vh !important;
+        max-width: 95vw !important;
+        max-height: 85vh !important;
+    }
+}
+
+/* Assistant modal content sizing in landscape */
+@media (max-width: 1024px) and (orientation: landscape) {
+    .aui-modal-content {
+        width: 75vw !important;
+        height: 65vh !important;
+    }
+}
+
+/* Mobile: tablet and smaller */
+@media (max-width: 768px) and (orientation: landscape) {
+    .aui-modal-content {
+        width: 80vw !important;
+        height: 60vh !important;
+    }
+}
+
+/* Mobile: small phones */
+@media (max-width: 480px) and (orientation: landscape) {
+    .aui-modal-content {
+        width: 90vw !important;
+        height: 75vh !important;
+        max-width: 95vw !important;
+        max-height: 85vh !important;
+    }
+}

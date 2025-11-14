@@ -8,7 +8,7 @@ import {
   PencilIcon,
   RefreshCwIcon,
   Square,
-} from "lucide-react";
+} from 'lucide-react';
 
 import {
   ActionBarPrimitive,
@@ -17,22 +17,19 @@ import {
   ErrorPrimitive,
   MessagePrimitive,
   ThreadPrimitive,
-} from "@assistant-ui/react";
+} from '@assistant-ui/react';
 
-import type { FC } from "react";
-import { LazyMotion, MotionConfig, domAnimation } from "motion/react";
-import * as m from "motion/react-m";
+import type { FC } from 'react';
+import { domAnimation, LazyMotion, MotionConfig } from 'motion/react';
+import * as m from 'motion/react-m';
 
-import { Button } from "@/components/ui/button";
-import { MarkdownText } from "@/components/assistant-ui/markdown-text";
-import { ToolFallback } from "@/components/assistant-ui/tool-fallback";
-import { TooltipIconButton } from "@/components/assistant-ui/tooltip-icon-button";
-import {
-  ComposerAttachments,
-  UserMessageAttachments,
-} from "@/components/assistant-ui/attachment";
+import { Button } from '@/components/ui/button';
+import { MarkdownText } from '@/components/assistant-ui/markdown-text';
+import { ToolFallback } from '@/components/assistant-ui/tool-fallback';
+import { TooltipIconButton } from '@/components/assistant-ui/tooltip-icon-button';
+import { UserMessageAttachments } from '@/components/assistant-ui/attachment';
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
 export const Thread: FC = () => {
   return (
@@ -41,7 +38,7 @@ export const Thread: FC = () => {
         <ThreadPrimitive.Root
           className="aui-root aui-thread-root"
           style={{
-            ["--thread-max-width" as string]: "44rem",
+            ['--thread-max-width' as string]: '44rem',
           }}
         >
           <ThreadPrimitive.Viewport className="aui-thread-viewport">
@@ -117,24 +114,28 @@ const ThreadSuggestions: FC = () => {
     <div className="aui-thread-welcome-suggestions">
       {[
         {
-          title: "Parle-moi de",
-          label: "ses compétences techniques",
-          action: "Quelles sont les compétences techniques principales et l'expertise en développement de Maxime ?",
+          title: 'Parle-moi de',
+          label: 'ses compétences techniques',
+          action:
+            "Quelles sont les compétences techniques principales et l'expertise en développement de Maxime ?",
         },
         {
-          title: "Parle-moi de",
-          label: "ses savoir-être",
-          action: "Quels sont les savoir-être, qualités professionnelles et atouts personnels de Maxime ?",
+          title: 'Parle-moi de',
+          label: 'ses savoir-être',
+          action:
+            'Quels sont les savoir-être, qualités professionnelles et atouts personnels de Maxime ?',
         },
         {
-          title: "Parle-moi de",
-          label: "ses projets marquants",
-          action: "Quels sont les projets les plus significatifs et réalisations principales de Maxime ?",
+          title: 'Parle-moi de',
+          label: 'ses projets marquants',
+          action:
+            'Quels sont les projets les plus significatifs et réalisations principales de Maxime ?',
         },
         {
-          title: "Comment",
-          label: "contacter Maxime ?",
-          action: "Comment puis-je contacter Maxime ou en savoir plus sur lui ?",
+          title: 'Comment',
+          label: 'contacter Maxime ?',
+          action:
+            'Comment puis-je contacter Maxime ou en savoir plus sur lui ?',
         },
       ].map((suggestedAction, index) => (
         <m.div
@@ -174,7 +175,6 @@ const Composer: FC = () => {
     <div className="aui-composer-wrapper">
       <ThreadScrollToBottom />
       <ComposerPrimitive.Root className="aui-composer-root">
-        <ComposerAttachments />
         <ComposerPrimitive.Input
           placeholder="Écrivez votre message..."
           className="aui-composer-input"
@@ -191,7 +191,6 @@ const Composer: FC = () => {
 const ComposerAction: FC = () => {
   return (
     <div className="aui-composer-action-wrapper justify-content-end">
-
       <ThreadPrimitive.If running={false}>
         <ComposerPrimitive.Send asChild>
           <TooltipIconButton
@@ -239,10 +238,7 @@ const MessageError: FC = () => {
 const AssistantMessage: FC = () => {
   return (
     <MessagePrimitive.Root asChild>
-      <div
-        className="aui-assistant-message-root"
-        data-role="assistant"
-      >
+      <div className="aui-assistant-message-root" data-role="assistant">
         <div className="aui-assistant-message-content">
           <MessagePrimitive.Parts
             components={{
@@ -292,10 +288,7 @@ const AssistantActionBar: FC = () => {
 const UserMessage: FC = () => {
   return (
     <MessagePrimitive.Root asChild>
-      <div
-        className="aui-user-message-root"
-        data-role="user"
-      >
+      <div className="aui-user-message-root" data-role="user">
         <UserMessageAttachments />
 
         <div className="aui-user-message-content-wrapper">
@@ -321,7 +314,10 @@ const UserActionBar: FC = () => {
       className="aui-user-action-bar-root"
     >
       <ActionBarPrimitive.Edit asChild>
-        <TooltipIconButton tooltip="Modifier le message" className="aui-user-action-edit">
+        <TooltipIconButton
+          tooltip="Modifier le message"
+          className="aui-user-action-edit"
+        >
           <PencilIcon />
         </TooltipIconButton>
       </ActionBarPrimitive.Edit>
@@ -340,7 +336,11 @@ const EditComposer: FC = () => {
 
         <div className="aui-edit-composer-footer">
           <ComposerPrimitive.Cancel asChild>
-            <Button variant="ghost" size="default" aria-label="Annuler l'édition">
+            <Button
+              variant="ghost"
+              size="default"
+              aria-label="Annuler l'édition"
+            >
               Annuler
             </Button>
           </ComposerPrimitive.Cancel>
@@ -356,13 +356,13 @@ const EditComposer: FC = () => {
 };
 
 const BranchPicker: FC<BranchPickerPrimitive.Root.Props> = ({
-                                                              className,
-                                                              ...rest
-                                                            }) => {
+  className,
+  ...rest
+}) => {
   return (
     <BranchPickerPrimitive.Root
       hideWhenSingleBranch
-      className={cn("aui-branch-picker-root", className)}
+      className={cn('aui-branch-picker-root', className)}
       {...rest}
     >
       <BranchPickerPrimitive.Previous asChild>
