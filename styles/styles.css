@@ -83,7 +83,7 @@ main .lead,
 /* Assistant modal positioning */
 .aui-modal-anchor {
   position: fixed !important;
-  bottom: 5rem !important;
+  bottom: 1.25rem !important;
   right: 1.25rem !important;
   width: 50px !important;
   height: 50px !important;
@@ -100,3 +100,9 @@ main .lead,
 body {
   scrollbar-gutter: stable;
 }
+
+.aui-modal-button-icon {
+    width: 30px !important;
+    height: 30px !important;
+}
+
