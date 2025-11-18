@@ -132,10 +132,10 @@ const ThreadSuggestions: FC = () => {
             'Quels sont les projets les plus significatifs et réalisations principales de Maxime ?',
         },
         {
-          title: 'Comment',
-          label: 'contacter Maxime ?',
+          title: 'Parle-moi de',
+          label: "ses centres d'intérêt",
           action:
-            'Comment puis-je contacter Maxime ou en savoir plus sur lui ?',
+            "Quels sont les centres d'intérêt de Maxime ?",
         },
       ].map((suggestedAction, index) => (
         <m.div
