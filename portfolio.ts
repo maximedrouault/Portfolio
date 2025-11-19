@@ -340,6 +340,18 @@ export const experience: ExperienceType[] = [
 
 export const projects: ProjectType[] = [
   {
+    name: 'Portfolio',
+    desc: `Portfolio professionnel personnel mettant en avant mon expérience, mes compétences techniques, mes projets réalisés et mon parcours de formation.
+      Le site présente de manière interactive mes différents domaines de compétence, mes réalisations professionnelles avec liens GitHub et démos live, mon historique d'expérience en entreprise et ma formation en développement logiciel.
+      Intégration de MaxBot, un assistant IA avec LLM et RAG, pour répondre aux questions sur mon parcours, formulaire de contact sécurisé, et données GitHub actualisées en direct.
+      Application fully responsive, optimisée SEO, avec animations fluides et interface moderne.
+
+      Technos clés : Next.js, React, TypeScript, Bootstrap, Reactstrap, Framer Motion, Radix UI, Zustand, EmailJS, GitHub API, SSG.`,
+    github: 'https://github.com/maximedrouault/Portfolio',
+    link: 'https://www.maximedrouault.com/',
+    projectsImg: 'img/portfolio.jpg',
+  },
+  {
     name: 'MaxBot',
     desc: `Assistant conversationnel IA pour mon portfolio personnel, basé sur la Retrieval-Augmented Generation (RAG).
       MaxBot combine un modèle de langage (LLM) avec des embeddings vectoriels pour fournir des réponses contextuelles intelligentes sur mon parcours professionnel et mes centres d'intérêt.
