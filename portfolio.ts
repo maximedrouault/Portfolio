@@ -340,6 +340,37 @@ export const experience: ExperienceType[] = [
 
 export const projects: ProjectType[] = [
   {
+    name: 'MaxBot',
+    desc: `Assistant conversationnel IA pour mon portfolio personnel, basé sur la Retrieval-Augmented Generation (RAG).
+      MaxBot combine un modèle de langage (LLM) avec des embeddings vectoriels pour fournir des réponses contextuelles intelligentes sur mon parcours professionnel et mes centres d'intérêt.
+      Le système récupère les sections pertinentes des documents PDF indexés et les utilise comme contexte pour générer des réponses précises, éliminant les hallucinations.
+      L'application propose un streaming en temps réel, l'édition de messages, l'historique conversationnel et une interface responsive optimisée pour desktop et mobile.
+
+      Technos clés : Next.js, React, TypeScript, Spring Boot, Spring AI, Pinecone, OpenAI, RAG, LLM, Server-Sent Events, Tailwind CSS.`,
+    github: 'https://github.com/maximedrouault/maxbot',
+    link: 'https://www.maximedrouault.com/',
+    projectsImg: 'img/maxbot.jpg',
+  },
+  {
+    name: 'MDD (Monde De Dev)',
+    desc: `Plateforme full-stack offrant un espace collaboratif pour les passionnés de programmation.
+      Les utilisateurs peuvent s’abonner à des thématiques, accéder à un fil d’actualité personnalisé, publier des articles, commenter, et gérer leur profil.
+      L’application est responsive (mobile & desktop) et sécurisée avec JWT.
+
+      Technos clés : Spring Boot, Spring Security (JWT), Spring Data JPA, MapStruct, Lombok, MySQL, Angular, PrimeNG, RxJS.`,
+    github: 'https://github.com/maximedrouault/mdd',
+    projectsImg: 'img/mdd.jpg',
+  },
+  {
+    name: 'KASA',
+    desc: `Développement d’une application front-end en React pour la location d’hébergements, basée sur une maquette Figma. L’application propose une navigation fluide, la gestion des routes dynamiques et un affichage responsive optimisé pour web et mobile.
+      
+      Technos clés : React, React Router, HTML, CSS.`,
+    github: 'https://github.com/maximedrouault/Kasa',
+    link: 'https://maxime-drouault-kasa.vercel.app/',
+    projectsImg: 'img/kasa.jpg',
+  },
+  {
     name: 'Booki',
     desc: `Développement d’un site de réservation d’hébergements à partir d’une maquette Figma. Mise en place d’un design responsive permettant une navigation fluide sur desktop, tablette et mobile.
 
@@ -364,15 +395,6 @@ export const projects: ProjectType[] = [
     github: 'https://github.com/maximedrouault/Nina-CARDUCCI-Photographe',
     link: 'https://maximedrouault.github.io/Nina-CARDUCCI-Photographe/',
     projectsImg: 'img/nina-carducci-photographe.jpg',
-  },
-  {
-    name: 'KASA',
-    desc: `Développement d’une application front-end en React pour la location d’hébergements, basée sur une maquette Figma. L’application propose une navigation fluide, la gestion des routes dynamiques et un affichage responsive optimisé pour web et mobile.
-      
-      Technos clés : React, React Router, HTML, CSS.`,
-    github: 'https://github.com/maximedrouault/Kasa',
-    link: 'https://maxime-drouault-kasa.vercel.app/',
-    projectsImg: 'img/kasa.jpg',
   },
   {
     name: 'Mon Vieux Grimoire',
@@ -418,16 +440,6 @@ export const projects: ProjectType[] = [
       Technos clés : Spring Boot, Spring Security, JWT, JPA/Hibernate, MapStruct, MySQL, AWS S3, Swagger/OpenAPI.`,
     github: 'https://github.com/maximedrouault/ChaTop-back',
     projectsImg: 'img/chatop.jpg',
-  },
-  {
-    name: 'MDD (Monde De Dev)',
-    desc: `Plateforme full-stack offrant un espace collaboratif pour les passionnés de programmation.
-      Les utilisateurs peuvent s’abonner à des thématiques, accéder à un fil d’actualité personnalisé, publier des articles, commenter, et gérer leur profil.
-      L’application est responsive (mobile & desktop) et sécurisée avec JWT.
-
-      Technos clés : Spring Boot, Spring Security (JWT), Spring Data JPA, MapStruct, Lombok, MySQL, Angular, PrimeNG, RxJS.`,
-    github: 'https://github.com/maximedrouault/mdd',
-    projectsImg: 'img/mdd.jpg',
   },
 ];
 
