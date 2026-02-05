@@ -302,8 +302,8 @@ export const experience: ExperienceType[] = [
     company: '',
     companyLogo: 'img/icons/common/experiences-logo.png',
     date: `2022 – Aujourd'hui`,
-    desc: `• Développement en cours d’une application assistée par l’IA destinée aux parents séparés.
-      • Développement en cours d’un chatbot pour mon portfolio, présentant mon parcours et mes centres d’intérêt.
+    desc: `• Développement en cours d’une application de coparentalité assistée par l’IA.
+      • Développement d’un assistant IA pour mon portfolio, présentant mon parcours et mes centres d’intérêt.
       • Conduite et réalisation de trente projets professionnels en conditions réelles ou reconstituées.
     
     Compétences clés maîtrisées :`,
