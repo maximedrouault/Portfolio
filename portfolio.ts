@@ -13,16 +13,16 @@ import {
 
 export const greetings: GreetingsType = {
   name: '<Maxime DROUAULT />',
-  title: 'Développeur Java et Angular',
-  description: `Avec 18 ans d’expérience dans les environnements IT, j’apporte une vision globale, alliant expertise technique, rigueur et sens du concret.
+  title: 'Ingénieur Logiciel et Infrastructures',
+  description: `Avec 20 ans d’expérience dans les environnements IT, j’apporte une vision globale, alliant expertise technique, rigueur et sens du concret.
     
     Pédagogue et à l’aise avec tout type d’interlocuteur, je sais vulgariser, comprendre les besoins et les traduire en solutions performantes et durables.
     
     Curieux et inventif, j’aime concevoir des applications fiables et utiles, en privilégiant la collaboration et la qualité.
     
-    Disponible dès à présent pour de nouvelles opportunités en développement, n’hésitez pas à me contacter.`,
+    Disponible dès à présent pour de nouvelles opportunités en ingénierie logicielle, n’hésitez pas à me contacter.`,
   resumeLink:
-    'CV - Maxime_DROUAULT - Développeur_Java_et_Angular - 18_ans_XP_IT.pdf',
+    'CV - Maxime DROUAULT - Ingénieur Logiciel et Infrastructures - 20 ans XP IT.pdf',
 };
 
 export const openSource = {
@@ -140,7 +140,7 @@ export const skillsSection: SkillsSectionType = {
         ),
         emoji('⚡ Virtualisation et conteneurisation d’environnements.'),
         emoji(
-          '⚡ Expérience de plus de 18 ans en infogérance de réseaux, parcs informatiques, téléphonie IP et serveurs.'
+          '⚡ Expérience de plus de 20 années en infogérance de réseaux, parcs informatiques, téléphonie IP et serveurs.'
         ),
       ],
       softwareSkills: [
